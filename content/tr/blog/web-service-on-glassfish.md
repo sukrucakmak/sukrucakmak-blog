@@ -1,6 +1,6 @@
 ---
 title: "GlassFish Üzerinde Web Servis"
-description: GlassFish uygulama sunucusu üzerinde Java web servisi yayınlama.
+description: "GlassFish uygulama sunucusu üzerinde Java web servisi yayınlama."
 date: 2011-06-28
 tags: [application servers, glassfish, java, web service]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Docker Cheat Sheet"
-description: A Docker cheat sheet: images, containers, run flags, pruning, exec, networks, and common recipes.
+description: "A Docker cheat sheet: images, containers, run flags, pruning, exec, networks, and common recipes."
 date: 2019-09-17
 tags: [docker]
 ---

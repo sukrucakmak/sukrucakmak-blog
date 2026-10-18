@@ -1,6 +1,6 @@
 ---
 title: "Concurrency – Aynı Anda Kullanım"
-description: Java'da eşzamanlı programlamaya (concurrency) giriş: thread kavramı ve temel yaklaşımlar.
+description: "Java'da eşzamanlı programlamaya (concurrency) giriş: thread kavramı ve temel yaklaşımlar."
 date: 2011-06-13
 tags: [concurrency, java]
 ---

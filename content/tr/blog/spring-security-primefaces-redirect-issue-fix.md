@@ -1,6 +1,6 @@
 ---
 title: "Spring Security + PrimeFaces Yönlendirme Problemi Çözümü"
-description: Spring Security ile PrimeFaces kullanılırken ortaya çıkan yönlendirme probleminin çözümü.
+description: "Spring Security ile PrimeFaces kullanılırken ortaya çıkan yönlendirme probleminin çözümü."
 date: 2015-05-15
 tags: [java, jsf, primefaces, spring]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Create a web project with Tailwind CSS"
-description: Setting up a web project with Tailwind CSS: project init, config paths, directives, and building the CSS.
+description: "Setting up a web project with Tailwind CSS: project init, config paths, directives, and building the CSS."
 date: 2022-12-18
 tags: [application servers]
 ---

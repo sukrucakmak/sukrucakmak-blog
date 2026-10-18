@@ -1,6 +1,6 @@
 ---
 title: "CentOS 7 & Red Hat Enterprise Linux 7 Java Kurulumu"
-description: CentOS 7 ve RHEL 7 üzerine yum ile Java 11 (OpenJDK) kurulumu ve alternatif sürüm seçimi — adım adım kısa rehber.
+description: "CentOS 7 ve RHEL 7 üzerine yum ile Java 11 (OpenJDK) kurulumu ve alternatif sürüm seçimi — adım adım kısa rehber."
 date: 2019-11-08
 tags: [java, linux]
 ---

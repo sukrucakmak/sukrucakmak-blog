@@ -1,6 +1,6 @@
 ---
 title: "JavaServer Faces 2 (JSF 2)"
-description: JavaServer Faces 2'ye giriş: bileşen tabanlı web geliştirmenin temelleri.
+description: "JavaServer Faces 2'ye giriş: bileşen tabanlı web geliştirmenin temelleri."
 date: 2011-09-02
 tags: [java, jsf]
 ---

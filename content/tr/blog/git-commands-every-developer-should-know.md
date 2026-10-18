@@ -1,6 +1,6 @@
 ---
 title: Her Geliştiricinin Bilmesi Gereken Git Komutları
-description: Günlük işin yaklaşık 20 komutla döndüğü Git'in temel komutları — kullanım sırasıyla, örnekleriyle.
+description: "Günlük işin yaklaşık 20 komutla döndüğü Git'in temel komutları — kullanım sırasıyla, örnekleriyle."
 date: 2026-10-09
 tags: [git, rehber]
 translation: /en/blog/git-commands-every-developer-should-know

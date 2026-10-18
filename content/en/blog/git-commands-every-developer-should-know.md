@@ -1,6 +1,6 @@
 ---
 title: Git Commands Every Developer Should Know
-description: Most daily Git work runs on about 20 commands — here they are in order of use, with examples.
+description: "Most daily Git work runs on about 20 commands — here they are in order of use, with examples."
 date: 2026-10-09
 tags: [git, guide]
 translation: /blog/git-commands-every-developer-should-know

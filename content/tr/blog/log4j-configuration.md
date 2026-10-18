@@ -1,6 +1,6 @@
 ---
 title: "Log4j Konfigürasyon"
-description: Apache log4j yapılandırması: appender, layout ve log seviyesi ayarları.
+description: "Apache log4j yapılandırması: appender, layout ve log seviyesi ayarları."
 date: 2011-06-27
 tags: [java, logging]
 ---

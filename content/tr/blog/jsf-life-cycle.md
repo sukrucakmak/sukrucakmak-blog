@@ -1,6 +1,6 @@
 ---
 title: "JSF Life Cycle (Yaşam Döngüsü)"
-description: JSF yaşam döngüsünün 6 adımı: isteğin işlenmesinden yanıtın render edilmesine kadar geçen süreç.
+description: "JSF yaşam döngüsünün 6 adımı: isteğin işlenmesinden yanıtın render edilmesine kadar geçen süreç."
 date: 2011-06-28
 tags: [java, jsf]
 ---

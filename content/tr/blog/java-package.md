@@ -1,6 +1,6 @@
 ---
 title: "Java Package"
-description: Java'da package kavramı: sınıfları düzenleme, isim çakışmalarını önleme ve erişim kontrolü.
+description: "Java'da package kavramı: sınıfları düzenleme, isim çakışmalarını önleme ve erişim kontrolü."
 date: 2011-08-01
 tags: [java]
 ---

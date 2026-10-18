@@ -1,6 +1,6 @@
 ---
 title: "Java 11-12-13 ve …"
-description: Java 11 ve sonrasındaki sürümlerde gelen yenilikler: yeni sürüm döngüsü ve dikkat çeken özellikler.
+description: "Java 11 ve sonrasındaki sürümlerde gelen yenilikler: yeni sürüm döngüsü ve dikkat çeken özellikler."
 date: 2019-02-13
 tags: [java]
 ---

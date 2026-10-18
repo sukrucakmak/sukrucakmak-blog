@@ -1,6 +1,6 @@
 ---
 title: "Apache log4j"
-description: Java'da loglama çatısı Apache log4j'ye giriş: temel kavramlar, log seviyeleri ve kullanımı.
+description: "Java'da loglama çatısı Apache log4j'ye giriş: temel kavramlar, log seviyeleri ve kullanımı."
 date: 2011-06-27
 tags: [java, logging]
 ---
