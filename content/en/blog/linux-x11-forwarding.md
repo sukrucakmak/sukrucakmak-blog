@@ -8,9 +8,11 @@ translation: /blog/linux-x11-forwarding
 
 To pull the display of a Linux server onto our own desktop we need to enable X11Forwarding. We can do that with the commands below.
 
+```bash
 cat /etc/ssh/sshd_config
 vi /etc/ssh/sshd_config
 
+# inside sshd_config:
 AddressFamily inet
 X11Forwarding yes
 
@@ -19,3 +21,4 @@ service sshd restart
 touch /home/user/.Xauthority
 xauth list
 xauth add
+```

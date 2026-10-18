@@ -5,7 +5,7 @@ const { data: posts } = await useBlogPosts(4)
 
 <template>
   <UPage>
-    <UPageSection :ui="{ container: 'pt-8 sm:pt-10 lg:pt-12 pb-6 sm:pb-8' }">
+    <UPageSection :ui="{ container: 'px-0 sm:px-0 lg:px-0 pt-8 sm:pt-10 lg:pt-12 pb-6 sm:pb-8' }">
       <div class="flex flex-col-reverse items-start gap-8 lg:flex-row lg:items-center lg:gap-12">
         <div class="flex-1">
           <p class="text-sm font-medium text-primary">
@@ -67,7 +67,7 @@ const { data: posts } = await useBlogPosts(4)
 
     <UPageSection
       :title="$t('home.recentPosts')"
-      :ui="{ container: 'py-4 sm:py-6 lg:py-8', title: 'text-2xl text-left' }"
+      :ui="{ container: 'px-0 sm:px-0 lg:px-0 py-4 sm:py-6 lg:py-8', title: 'text-2xl text-left' }"
     >
       <PostList :posts="posts ?? []" variant="cards" />
       <UButton

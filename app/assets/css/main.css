@@ -16,3 +16,12 @@
 body {
   font-family: "Public Sans", ui-sans-serif, system-ui, sans-serif;
 }
+
+/* Nuxt Content renders post images with the `w-full` utility, which
+   upscales small WP-era screenshots to the full content width. Keep them
+   at natural size while still shrinking to fit narrow viewports.
+   Unlayered rules outrank the layered `w-full` utility. */
+.content-body img {
+  width: auto;
+  max-width: min(720px, 100%);
+}

@@ -8,9 +8,11 @@ translation: /en/blog/linux-x11-forwarding
 
 Linux sunucu ekranını kendi masaüstümüze çekmek için X11Forwarding açmamız lazım. Aşağıdaki komutlarla açabiliriz.
 
+```bash
 cat /etc/ssh/sshd_config
 vi /etc/ssh/sshd_config
 
+# sshd_config içinde:
 AddressFamily inet
 X11Forwarding yes
 
@@ -19,3 +21,4 @@ service sshd restart
 touch /home/user/.Xauthority
 xauth list
 xauth add
+```

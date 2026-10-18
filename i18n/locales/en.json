@@ -21,6 +21,8 @@
     "title": "Blog",
     "description": "Posts about software, Java, Spring, and community.",
     "empty": "No posts yet.",
+    "categories": "Categories",
+    "all": "All",
     "onlyInLocale": "This post is only available in English."
   },
   "post": {

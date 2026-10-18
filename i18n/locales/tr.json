@@ -21,6 +21,8 @@
     "title": "Blog",
     "description": "Yazılım, Java, Spring ve topluluk üzerine yazılar.",
     "empty": "Henüz yazı yok.",
+    "categories": "Kategoriler",
+    "all": "Tümü",
     "onlyInLocale": "Bu yazı yalnızca Türkçe olarak mevcut."
   },
   "post": {
