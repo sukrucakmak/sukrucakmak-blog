@@ -19,5 +19,14 @@ export default defineNuxtConfig({
     ],
     detectBrowserLanguage: false,
   },
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          langs: ['bash', 'shell', 'html', 'java', 'sql', 'xml', 'json', 'yaml', 'typescript', 'javascript', 'vue', 'diff', 'properties', 'ini'],
+        },
+      },
+    },
+  },
   compatibilityDate: '2024-04-03',
 })
