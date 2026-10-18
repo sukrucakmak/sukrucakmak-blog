@@ -6,9 +6,10 @@
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Wider content container — Nuxt UI's default --ui-container is 80rem. */
+/* Content width grows with the viewport: 80rem min, ~92vw fluid, 112rem cap.
+   Nuxt UI's default --ui-container is a fixed 80rem. */
 :root {
-  --ui-container: 90rem;
+  --ui-container: clamp(80rem, 92vw, 112rem);
 }
 
 /* Literal font-family so @nuxt/fonts detects and downloads Public Sans. */
