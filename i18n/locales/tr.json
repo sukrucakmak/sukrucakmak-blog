@@ -6,7 +6,8 @@
   "nav": {
     "home": "Ana Sayfa",
     "blog": "Blog",
-    "about": "Hakkımda"
+    "about": "Hakkımda",
+    "contact": "İletişim"
   },
   "home": {
     "greeting": "Merhaba, ben Şükrü.",
