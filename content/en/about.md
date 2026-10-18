@@ -8,22 +8,21 @@ Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). 
 
 ## Experience
 
-- <img src="/logos/oobeya.svg" alt="Oobeya" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Oobeya** — Co-Founder & CTO · _Dec 2022 – present_  
-  Building a **software engineering intelligence** platform that helps development teams reduce friction in software development and delivery.
-- <img src="/logos/i2i-systems.png" alt="i2i Systems" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **i2i Systems** — Senior Developer & Software Architect · _2011 – 2018_  
-  Development and architecture for Turkcell, Vodafone and Avea's billing/charging applications.
-- <img src="/logos/vakifbank.png" alt="Vakıfbank" style="height:22px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Vakıfbank** — Solution Architect  
-  End-to-end solution architecture for banking processes.
-- <img src="/logos/atez.png" alt="Atez" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Atez Yazılım Teknolojileri** — CTO  
-  Software design, development, testing and maintenance for foreign-trade processes.
-- <img src="/logos/altinbas.png" alt="Altınbaş University" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Altınbaş University** — Lecturer  
-  Software engineering courses.
+| | Organization | Role | Period |
+|---|---|---|---|
+| <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Software engineering intelligence platform | Co-Founder & CTO | Dec 2022 – present |
+| <img src="/logos/i2i-systems.png" alt="i2i Systems" width="36"> | **i2i Systems**<br>Turkcell, Vodafone, Avea billing/charging | Senior Developer & Software Architect | 2011 – 2018 |
+| <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Banking processes | Solution Architect | — |
+| <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Foreign-trade software | CTO | — |
+| <img src="/logos/altinbas.png" alt="Altınbaş University" width="36"> | **Altınbaş University**<br>Software engineering courses | Lecturer | — |
 
 ## Education
 
-- <img src="/logos/kocaeli.png" alt="Kocaeli University" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kocaeli University** — Computer Engineering, PhD _(ongoing)_
-- <img src="/logos/bogazici.png" alt="Boğaziçi University" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Boğaziçi University** — Software Engineering, MSc _(2011)_
-- <img src="/logos/khas.svg" alt="Kadir Has University" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kadir Has University** — Computer Engineering, BSc _(2009)_
+| | University | Program | Period |
+|---|---|---|---|
+| <img src="/logos/kocaeli.png" alt="Kocaeli University" width="36"> | **Kocaeli University** | Computer Engineering, PhD | ongoing |
+| <img src="/logos/bogazici.png" alt="Boğaziçi University" width="36"> | **Boğaziçi University** | Software Engineering, MSc | 2011 |
+| <img src="/logos/khas.svg" alt="Kadir Has University" width="36"> | **Kadir Has University** | Computer Engineering, BSc | 2009 |
 
 ## Expertise
 

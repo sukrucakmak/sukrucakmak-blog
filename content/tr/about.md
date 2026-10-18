@@ -8,22 +8,21 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 
 ## Deneyim
 
-- <img src="/logos/oobeya.svg" alt="Oobeya" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Oobeya** — Kurucu Ortak & CTO · _Ara 2022 – günümüz_  
-  Yazılım geliştirme ekiplerinin teslimat sürtünmesini azaltan bir **software engineering intelligence** platformu geliştiriyoruz.
-- <img src="/logos/i2i-systems.png" alt="i2i Systems" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **i2i Systems** — Kıdemli Geliştirici & Yazılım Mimarı · _2011 – 2018_  
-  Turkcell, Vodafone ve Avea'nın billing/charging uygulamalarında geliştirme ve mimari.
-- <img src="/logos/vakifbank.png" alt="Vakıfbank" style="height:22px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Vakıfbank** — Çözüm Mimarı  
-  Bankacılık süreçlerinde uçtan uca çözüm mimarisi.
-- <img src="/logos/atez.png" alt="Atez Yazılım" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Atez Yazılım Teknolojileri** — CTO  
-  Dış ticaret süreçleri için yazılım tasarımı, geliştirme, test ve bakım.
-- <img src="/logos/altinbas.png" alt="Altınbaş Üniversitesi" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Altınbaş Üniversitesi** — Eğitmen  
-  Yazılım mühendisliği dersleri.
+| | Kurum | Görev | Dönem |
+|---|---|---|---|
+| <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Yazılım mühendisliği zekâsı platformu | Kurucu Ortak & CTO | Ara 2022 – günümüz |
+| <img src="/logos/i2i-systems.png" alt="i2i Systems" width="36"> | **i2i Systems**<br>Turkcell, Vodafone, Avea billing/charging | Kıdemli Geliştirici & Yazılım Mimarı | 2011 – 2018 |
+| <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Bankacılık süreçleri | Çözüm Mimarı | — |
+| <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Dış ticaret süreçleri yazılımları | CTO | — |
+| <img src="/logos/altinbas.png" alt="Altınbaş Üniversitesi" width="36"> | **Altınbaş Üniversitesi**<br>Yazılım mühendisliği dersleri | Eğitmen | — |
 
 ## Eğitim
 
-- <img src="/logos/kocaeli.png" alt="Kocaeli Üniversitesi" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kocaeli Üniversitesi** — Bilgisayar Mühendisliği, Doktora _(devam ediyor)_
-- <img src="/logos/bogazici.png" alt="Boğaziçi Üniversitesi" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Boğaziçi Üniversitesi** — Yazılım Mühendisliği, MSc _(2011)_
-- <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kadir Has Üniversitesi** — Bilgisayar Mühendisliği, BSc _(2009)_
+| | Üniversite | Program | Dönem |
+|---|---|---|---|
+| <img src="/logos/kocaeli.png" alt="Kocaeli Üniversitesi" width="36"> | **Kocaeli Üniversitesi** | Bilgisayar Mühendisliği, Doktora | devam ediyor |
+| <img src="/logos/bogazici.png" alt="Boğaziçi Üniversitesi" width="36"> | **Boğaziçi Üniversitesi** | Yazılım Mühendisliği, MSc | 2011 |
+| <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" width="36"> | **Kadir Has Üniversitesi** | Bilgisayar Mühendisliği, BSc | 2009 |
 
 ## Uzmanlıklar
 
