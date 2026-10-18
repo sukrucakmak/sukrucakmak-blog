@@ -6,7 +6,8 @@
   "nav": {
     "home": "Home",
     "blog": "Blog",
-    "about": "About"
+    "about": "About",
+    "events": "Events"
   },
   "home": {
     "greeting": "Hi, I'm Şükrü.",
