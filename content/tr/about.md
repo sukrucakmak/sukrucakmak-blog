@@ -11,9 +11,13 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 | | Kurum | Görev | Dönem |
 |---|---|---|---|
 | <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Yazılım mühendisliği zekâsı platformu | Kurucu Ortak & CTO | Ara 2022 – günümüz |
-| <img src="/logos/i2i-systems.png" alt="i2i Systems" width="36"> | **i2i Systems**<br>Turkcell, Vodafone, Avea billing/charging | Kıdemli Geliştirici & Yazılım Mimarı | 2011 – 2018 |
-| <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Bankacılık süreçleri | Çözüm Mimarı | — |
-| <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Dış ticaret süreçleri yazılımları | CTO | — |
+| <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Dış ticaret süreçleri yazılımları | CTO | 2020 – 2022 |
+| <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Bankacılık süreçleri | Çözüm Mimarı | 2018 – 2020 |
+| <img src="/logos/i2i-systems.png" alt="i2i Systems" width="36"> | **i2i Systems**<br>Telekom operatörlerine billing/charging çözümleri | Kıdemli Geliştirici & Yazılım Mimarı | 2011 – 2018 |
+| <img src="/logos/turkishairlines.png" alt="Türk Hava Yolları" width="36"> | **Türk Hava Yolları**<br>i2i Systems projesi | Yazılım Mimarı | 2017 – 2018 |
+| <img src="/logos/vodafone.png" alt="Vodafone" width="36"> | **Vodafone**<br>i2i Systems projesi — billing/charging | Kıdemli Geliştirici | 2016 – 2017 |
+| <img src="/logos/turktelekom.png" alt="Türk Telekom" width="36"> | **Türk Telekom**<br>i2i Systems projesi — billing/charging | Kıdemli Geliştirici | 2015 – 2016 |
+| <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems projesi — billing/charging | Geliştirici | 2011 – 2015 |
 | <img src="/logos/altinbas.png" alt="Altınbaş Üniversitesi" width="36"> | **Altınbaş Üniversitesi**<br>Yazılım mühendisliği dersleri | Eğitmen | — |
 
 ## Eğitim
