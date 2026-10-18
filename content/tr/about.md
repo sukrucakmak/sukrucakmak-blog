@@ -24,11 +24,13 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 
 ## Eğitim
 
-| | Üniversite | Program | Dönem |
+| | Okul | Program | Dönem |
 |---|---|---|---|
 | <img src="/logos/kocaeli.png" alt="Kocaeli Üniversitesi" width="36"> | **Kocaeli Üniversitesi** | Bilgisayar Mühendisliği, Doktora | devam ediyor |
-| <img src="/logos/bogazici.png" alt="Boğaziçi Üniversitesi" width="36"> | **Boğaziçi Üniversitesi** | Yazılım Mühendisliği, MSc | 2011 |
-| <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" width="36"> | **Kadir Has Üniversitesi** | Bilgisayar Mühendisliği, BSc | 2009 |
+| <img src="/logos/altinbas.png" alt="Altınbaş Üniversitesi" width="36"> | **Altınbaş Üniversitesi** | Elektrik ve Bilgisayar Mühendisliği, MSc | 2017 – 2019 |
+| <img src="/logos/bogazici.png" alt="Boğaziçi Üniversitesi" width="36"> | **Boğaziçi Üniversitesi** | Yazılım Mühendisliği, MSc | 2011 – 2013 |
+| <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" width="36"> | **Kadir Has Üniversitesi** | Bilgisayar Mühendisliği, BSc | 2005 – 2009 |
+| <img src="/logos/sehremini.jpg" alt="Şehremini Anadolu Lisesi" width="36"> | **Şehremini Anadolu Lisesi** | Lise | 2001 – 2005 |
 
 ## Uzmanlıklar
 

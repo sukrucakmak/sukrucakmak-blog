@@ -24,11 +24,13 @@ Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). 
 
 ## Education
 
-| | University | Program | Period |
+| | School | Program | Period |
 |---|---|---|---|
 | <img src="/logos/kocaeli.png" alt="Kocaeli University" width="36"> | **Kocaeli University** | Computer Engineering, PhD | ongoing |
-| <img src="/logos/bogazici.png" alt="Boğaziçi University" width="36"> | **Boğaziçi University** | Software Engineering, MSc | 2011 |
-| <img src="/logos/khas.svg" alt="Kadir Has University" width="36"> | **Kadir Has University** | Computer Engineering, BSc | 2009 |
+| <img src="/logos/altinbas.png" alt="Altınbaş University" width="36"> | **Altınbaş University** | Electrical and Computer Engineering, MSc | 2017 – 2019 |
+| <img src="/logos/bogazici.png" alt="Boğaziçi University" width="36"> | **Boğaziçi University** | Software Engineering, MSc | 2011 – 2013 |
+| <img src="/logos/khas.svg" alt="Kadir Has University" width="36"> | **Kadir Has University** | Computer Engineering, BSc | 2005 – 2009 |
+| <img src="/logos/sehremini.jpg" alt="Şehremini Anadolu Lisesi" width="36"> | **Şehremini Anadolu High School** | High school | 2001 – 2005 |
 
 ## Expertise
 
