@@ -12,7 +12,7 @@ Uzmanlık alanlarım: Java ekosistemi — Spring Boot, JPA, Hibernate, REST, SOA
 
 Yazılım topluluğuna katkı vermeyi de mesleğim kadar önemsiyorum: Türkiye'de düzenlenen önemli yazılım etkinliklerinin organizatörlerindenim ve Altınbaş Üniversitesi'nde eğitmenlik yaptım.
 
-**Eğitim:** Boğaziçi Üniversitesi, Yazılım Mühendisliği (MSc, 2011) · Kadir Has Üniversitesi, Bilgisayar Mühendisliği (BSc, 2009)
+**Eğitim:** Kocaeli Üniversitesi, Bilgisayar Mühendisliği (doktora, devam ediyor) · Boğaziçi Üniversitesi, Yazılım Mühendisliği (MSc, 2011) · Kadir Has Üniversitesi, Bilgisayar Mühendisliği (BSc, 2009)
 
 **Bağlantılar:** [LinkedIn](https://linkedin.com/in/sukrucakmak) · [GitHub](https://github.com/sukrucakmak) · [sukrucakmak.com](https://sukrucakmak.com)
 

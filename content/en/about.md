@@ -12,7 +12,7 @@ My areas of expertise: the Java ecosystem — Spring Boot, JPA, Hibernate, REST,
 
 Giving back to the software community matters to me as much as the craft itself: I'm one of the organizers behind major software events in Turkey, and I've lectured at Altınbaş University.
 
-**Education:** Boğaziçi University, Software Engineering (MSc, 2011) · Kadir Has University, Computer Engineering (BSc, 2009)
+**Education:** Kocaeli University, Computer Engineering (PhD, ongoing) · Boğaziçi University, Software Engineering (MSc, 2011) · Kadir Has University, Computer Engineering (BSc, 2009)
 
 **Links:** [LinkedIn](https://linkedin.com/in/sukrucakmak) · [GitHub](https://github.com/sukrucakmak) · [sukrucakmak.com](https://sukrucakmak.com)
 
