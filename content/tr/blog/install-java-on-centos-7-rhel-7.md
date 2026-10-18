@@ -1,0 +1,17 @@
+---
+title: "CentOS 7 & Red Hat Enterprise Linux 7 Java Kurulumu"
+date: 2019-11-08
+tags: [java, linux]
+---
+
+1. sudo -i
+
+2. yum update
+
+3. yum list available java\*
+
+4. yum install java-11-openjdk
+
+5. alternatives –config java
+
+6. choose you want
