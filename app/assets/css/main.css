@@ -6,6 +6,11 @@
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Wider content container — Nuxt UI's default --ui-container is 80rem. */
+:root {
+  --ui-container: 90rem;
+}
+
 /* Literal font-family so @nuxt/fonts detects and downloads Public Sans. */
 body {
   font-family: "Public Sans", ui-sans-serif, system-ui, sans-serif;
