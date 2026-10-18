@@ -24,8 +24,7 @@ After these steps we're ready to work with log4j. As an example I'll write a "**
 
 I'll bring log4j up without any file at all, using the "***configure()***" method of the "**BasicConfigurator**" class provided by log4j.
 
-[java]
-
+```java
 package org.sukru.log4j;
 public class Student {
 	private Long studentNumber;
@@ -46,11 +45,9 @@ public class Student {
 	// getters and setters
 
 }
-
-[/java]
+```
 Let's also write the test class where we bring log4j up and use it.
-[java]
-
+```java
 package org.sukru.log4j;
 import org.apache.log4j.BasicConfigurator;
 
@@ -71,16 +68,13 @@ public class Log4jTest {
 	}
 
 }
-
-[/java]
+```
 When we run this class the output will look like this.
-[shell]
-
+```bash
 0 [main] INFO org.sukru.log4j.Student  – Initializing a new Student…
 
 2 [main] INFO org.sukru.log4j.Student  – new Student initialized: Yunus Emre Aslan
-
-[/shell]
+```
 I used the "**info(Object message)**" method for informational purposes, but depending on the need and the goal the following methods can be used;
 
 - fatal()

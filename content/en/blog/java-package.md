@@ -16,11 +16,9 @@ The Java Package concept is used to organize Java classes in a tidy way. Classes
 
 Like most software conventions, this isn't mandatory but it's a structure people can understand and agree on more easily when followed. For example, I currently work at a company called **[i2i systems](http://www.i2i-systems.com)** and I'm writing a commercial application called "EasyProv"; I want to group the utilities I frequently use in the application under a package;
 
-[java]
-
+```java
 package com.i2i.easyprov.util;
-
-[/java]
+```
 
 Reading it again we get the following information;
 
@@ -33,6 +31,7 @@ Reading it again we get the following information;
 4. **util** – utilities live here
 
 In short, what I can find under this package is visible upfront 🙂
+
 **Some of Java's core packages…**
 
 - [java.lang](http://download.oracle.com/javase/6/docs/api/java/lang/package-summary.html) 	— the package with the language's functionality and basic types, like String, Integer…
@@ -58,6 +57,7 @@ In short, what I can find under this package is visible upfront 🙂
 Hope it was useful 🙂 may the "default package" be the one you hate most.
 
 Take it easy.
+
 **Resources**
 
 1. http://download.oracle.com/javase/tutorial/java/concepts/package.html

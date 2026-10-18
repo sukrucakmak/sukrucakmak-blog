@@ -29,9 +29,11 @@ Exception handling can be done:
 
 For example, you're reading a file using an object of the `java.io.FileReader` class; you give it a filename and it can't find the file, so it throws a `java.io.FileNotFoundException`. In a well-written program you catch this in a try-catch block, inform the user about the error, and let them fix the filename.
 Every situation other than "Error" or "Runtime Exception" is a "Checked Exception".
+
 **2. Error**
 
 These are situations caused by external systems outside your application. For example, you want to read a file but your file system — say the disk — can't be reached; that's where an "Error" type situation occurs, and the application throws a `java.io.IOError`.
+
 **3. Runtime Exception**
 
 This is a situation that occurs while your application is running. It stems from the application itself — it's a bug in the program, a logic error, or a result of misusing the API 🙂 And yes, I've done it like everyone else, and I've usually gotten a `NullPointerException` — that's why 🙂
@@ -39,6 +41,7 @@ To make it clearer with an example: you want to read a file but didn't provide a
 By the way, "Error" and "Runtime Exception" together are also called "Unchecked Exceptions".
 I think this much information is enough as an introduction — enough for it to stick in your mind. In my next post on this topic we'll write plenty of code 🙂
 Take it easy.
+
 **Resources**
 
 1. http://download.oracle.com/javase/tutorial/essential/exceptions/

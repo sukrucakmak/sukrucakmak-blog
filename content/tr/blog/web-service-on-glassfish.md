@@ -28,8 +28,7 @@ Sıra geldi kodlamamıza, artık sınıfımızı ve yazmak istediğimiz metodlar
 [![](/images/web-service-on-glassfish-web-service-class.png)](/images/web-service-on-glassfish-web-service-class.png)
 Bir sınıfın web servis olabilmesi için sınıfın başına **@WebService()** annotation işareti koyulur, web servis metodu olması istediğimiz metodun başına da **@WebMethod()** annotation işareti konulur. Tamam bilmemiz gerekenler bu kadardı, dağılabilirsiniz 🙂 Şaka bir yana örnek java kodu aşağıda…
 
-[java]
-
+```java
 package org.sukru.webservices;
 import javax.jws.WebMethod;
 
@@ -48,12 +47,10 @@ public class HelloWorld {
 	}
 
 }
-
-[/java]
+```
 Yapılması gereken ek bir şey de web.xml üzerinde servlet tanımlarını yapmak, en başta oluşan web.xml içerisine aşağıdaki kodu yazıyorum.
 
-[xml]
-
+```xml
 <servlet>
 
 	<display-name>HelloWorld</display-name>
@@ -71,8 +68,7 @@ Yapılması gereken ek bir şey de web.xml üzerinde servlet tanımlarını yapm
 	<url-pattern>/HelloWorld</url-pattern>
 
 </servlet-mapping>
-
-[/xml]
+```
 Böylelikle, HelloWorld isminde bir servletim olduğunu, url bilgisi ve sınıfının nerede olduğunu eklemiş oldum ki uygulama sunucusu tanısın uygulamamızı.
 Sıra artık önemli noktalardan birine yani GlassFish’e yüklemeye geldi. Eclipse’in Servers tabında yeni sunucu eklemek istiyoruz ama standartında GlassFish i bulamazsınız o sebeple, Servers altında New > Download Additional Adapters yolunu takip ediyoruz, gelen listeden “**Oracle GlassFish Server Tools**” seçimini yapıyoruz, kısa bir yüklemeden sonra Eclipse i yeniden başlatmak istiyor, başlat diyoruz.
 Şimdi ekleyebiliriz. Aşağıda örneği var.

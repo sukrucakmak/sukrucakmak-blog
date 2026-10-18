@@ -11,8 +11,7 @@ translation: /en/blog/xstream-java-to-xml-xml-to-java
 Java nesnesinin XML çıktısını almak ya da XML olarak verdiğimiz bilgiyi Java nesnesine çevirmek için kullanabileceğimiz çok şık bir kütüphane. [http://xstream.codehaus.org/](http://xstream.codehaus.org/) adresinde ikamet ediyor.
 Yapılması gereken gayet basit, ilgili jarları indirip projemizin kütüphaneleri arasına ekliyoruz.
 Kütüphanenin kullanımını anlaşılmasını kolaylaştırmak için “Ders” ve “Ogretmen” isimli iki nesne üzerinden aşağıda anlattım, kodları siz de kendi ortamınızda çalıştırabilirsiniz.
-[java title=”<strong>Ders sınıfı</strong>”]
-
+```java
 package org.sukru.xstream.entity;
 public class Ders {
  public Long id;
@@ -33,9 +32,8 @@ public class Ders {
 //getters and setters
 
 }
-[/java]
-[java title=”<strong>Ogretmen sınıfı</strong>”]
-
+```
+```java
 package org.sukru.xstream.entity;
 public class Ogretmen {
  public String ad;
@@ -59,9 +57,8 @@ public class Ogretmen {
  }
 
 }
-[/java]
-[java title=”<strong>XStream'i kullanmaya başlayalım…</strong>”]
-
+```
+```java
 package org.sukru.xstream.test;
 import org.sukru.xstream.entity.Ders;
 
@@ -102,11 +99,9 @@ public class XStreamTest {
  }
 
 }
-
-[/java]
+```
 ve XML çıktısı da aşağıdaki gibi oluyor.
-[xml]
-
+```xml
 <Ders>
 
   <id>1</id>
@@ -122,8 +117,9 @@ ve XML çıktısı da aşağıdaki gibi oluyor.
   </ogretmen>
 
 </Ders>
-
-[/xml]
+```
 XML’den oluşturduğumuz nesneyi konsola bastırdığımız zaman aşağıdaki gibi olduğunu görürüz.
 
-[plain]XML den Ders: 1 – Software Engineering – Ogretmen [ad=Yasin, soyad=Kenar][/plain]
+```text
+XML den Ders: 1 – Software Engineering – Ogretmen [ad=Yasin, soyad=Kenar]
+```

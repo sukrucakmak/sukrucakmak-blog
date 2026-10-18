@@ -58,8 +58,7 @@ The ordering between levels is as follows: **`DEBUG < INFO < WARN < ERROR < FATA
 | %d | The time the log was produced. |
 
 Now, with all this theoretical knowledge, I'll build a working application. I create a folder named "**config**" under my project and prepare the following file named "**log4j.xml**" inside it.
-[xml]
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
@@ -80,8 +79,7 @@ Now, with all this theoretical knowledge, I'll build a working application. I cr
 
  </root>
 </log4j:configuration>
-
-[/xml]
+```
 Now let me explain the xml above a bit; when the program starts reading this xml it first looks under **root** and searches for an **appender** so it can write the log there. Ours has one named **stdout**; it goes and finds it among the **appenders**, understands ours is a **ConsoleAppender** — one that writes to the console — and writes to the **appender** according to its **pattern**. That's the story 🙂
 Now let's unpack the pattern a bit;
 
@@ -100,8 +98,7 @@ Now let's unpack the pattern a bit;
 - ***%n*** – Write the next message on the line below.
 
 Now let's use log4j. First let's write a class.
-[java]
-
+```java
 package org.sukru.log4j;
 public class Student {
  private Long studentNumber;
@@ -122,11 +119,9 @@ public class Student {
   // getters and setters
 
 }
-
-[/java]
+```
 Our test class for Log4j.
-[java]
-
+```java
 package org.sukru.log4j;
 import org.apache.log4j.Logger;
 
@@ -153,17 +148,18 @@ public class Log4jTest {
   }
 
 }
-
-[/java]
+```
 Let's see what kind of log we got — I think it's pretty self-explanatory 🙂
-[shell]
+```bash
 2011-06-27 14:42:19,507 [main]  INFO Log4jTest:12 – Initializing a new Student…
 
 2011-06-27 14:42:19,511 [main]  INFO Log4jTest:14 – new Student initialized: Tuncay Uzun
-[/shell]
+```
 Now let's play with the xml file a bit and write the following expression under **root** to pull our log level from **info** down to the less verbose **warn**. (I wrote the ordering above 😉 )
 
-[xml]<level value="warn" />[/xml]
+```xml
+<level value="warn" />
+```
 
 If we run it again now, we see that no log is written 🙂 That is, with a single expression in the xml we made the log level of the entire project **warn** and prevented our **info** logs from being written; only **warn** and above messages, if any, will be seen 😉
 Take it easy.

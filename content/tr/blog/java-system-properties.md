@@ -10,8 +10,7 @@ Java’da **sistem bilgilerini** Java’nın bize sunduğu anahtar kelimeler ara
 `Properties properties = System.getProperties();`
 
 ifadesi ile sistem özelliklerini bir “properties” nesnesine alalım, sonra **entrySet**i bir **Set**nesnesine aşağıdaki ifade ile alalım ki üzerinde dönerek tek tek değerlerine bakabilelim. Çünkü daha sonra sadece zaman zaman işimize yarayacak olanlara bakabilelim. Örnek kodu aşağıda görebilirsiniz.
-[java]
-
+```java
 package org.sukru.system;
 import java.util.Map.Entry;
 
@@ -33,8 +32,7 @@ public class SystemProperties {
 
 	}
 }
-
-[/java]
+```
 Bu kodu çalıştırdığımızda gelen tüm anahtar kelimelere ulaşabiliriz. Çıktısında her bir satır sistem hakkında farklı bir bilgiyi veriyor, genellikle tek sefer anlarsınız neyi sorgulayabileceğinizi. Örnek: **java.version** size sistem üzerindeki Java versiyon bilgisini verecektir. Çıktıyı aşağıya ekledim.
 
 ```
@@ -148,8 +146,7 @@ sun.cpu.isalist
 Yine de bir kaç tanesini kendi makinemde sorgulayayım, bakalım ben nasıl bir ortamda çalışıyormuşum 🙂
 
 `System.getProperty(String property)` ifadesinde paramatre olarak vericez ve bize değerini dönecek.
-[java]
-
+```java
 package org.sukru.system;
 public class SystemInfo {
 	public static void main(String[] args) {
@@ -166,8 +163,7 @@ public class SystemInfo {
 
 	}
 }
-
-[/java]
+```
 Çıktısı da görüldüğü üzere;
 
 ```

@@ -31,8 +31,7 @@ Vee oluşan sınıf içinden sırasıyla şu işlemleri yapıyorum;
 
 4. Web servisin çağıracağım metodu -sayHello()- String döneceğinden buna uygun tanımı yapıp, web servisi çalıştırıyorum.
 
-[java]
-
+```java
 package org.sukru.webservices.test;
 import org.sukru.webservices.HelloWorld;
 
@@ -52,7 +51,6 @@ public class WebServiceTest {
 
 	}
 }
-
-[/java]
+```
 Sağ tıklayıp Run As > Java Application deyince çıktının şu şekilde olduğunu görürsek **Web Servisinin Cevabı: Merhaba Melih Sakarya!**, sevinebiliriz 🙂
 Kolay gelsin.

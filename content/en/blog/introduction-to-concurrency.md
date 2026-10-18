@@ -14,8 +14,7 @@ It has two basic operations;
 2. Threads
 
 What immediately comes to mind is "**Threads**". Each "thread" is a "process" in its own right. There are 2 ways to start a new "thread"; the first is to implement the "**Runnable**" interface, the second is to subclass the "**Thread**" object. Both examples are below;
-[java title=”<strong>1. Provide a Runnable object</strong>”]
-
+```java
 public class HelloRunnable implements Runnable {
 	@Override
 
@@ -37,10 +36,8 @@ public class HelloRunnable implements Runnable {
 	}
 
 }
-
-[/java]
-[java title=”<strong>2. Subclass of Thread</strong>”]
-
+```
+```java
 public class HelloThread extends Thread {
 	public void run() {
 
@@ -53,8 +50,7 @@ public class HelloThread extends Thread {
 	}
 
 }
-
-[/java]
+```
 As seen in both examples, the thread starts running with the "**Thread.start()***" call. Once it starts, it triggers the "**run()**" method.*
 ***Note:*** *Based on [http://download.oracle.com/javase/tutorial/essential/concurrency/index.html](http://download.oracle.com/javase/tutorial/essential/concurrency/index.html).**
 **

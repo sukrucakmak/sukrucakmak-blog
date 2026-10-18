@@ -14,8 +14,7 @@ Java’da “**Concurrency**” yani “**Aynı Anda Kullanım**” kavramı, ay
 2. Threads
 
 Aslında hemen akla “**Threads**” gelir. Her bir “thread” başlıbaşına bir “process”tir. Yeni bir “thread” başlatmanın 2 tür yolu var; birincisi “**Runnable**” arayüzünden türetmek, ikincisi “**Thread**” nesnesinin alt sınıfı yapmak. Aşağıda 2 örnek de mevcut;
-[java title=”<strong>1. Provide a Runnable object</strong>”]
-
+```java
 public class HelloRunnable implements Runnable {
 	@Override
 
@@ -37,10 +36,8 @@ public class HelloRunnable implements Runnable {
 	}
 
 }
-
-[/java]
-[java title=”<strong>2. Subclass of Thread</strong>”]
-
+```
+```java
 public class HelloThread extends Thread {
 	public void run() {
 
@@ -53,8 +50,7 @@ public class HelloThread extends Thread {
 	}
 
 }
-
-[/java]
+```
 Her iki örnekte de görüldüğü üzere “**Thread.start()***” ifadesi ile thread çalışmaya başlıyor. Thread çalışmaya başlayınca “**run()**” metodunu tetikliyor.*
 ***Not:** *[http://download.oracle.com/javase/tutorial/essential/concurrency/index.html](http://download.oracle.com/javase/tutorial/essential/concurrency/index.html) adresinden faydalanılmıştır.**
 **

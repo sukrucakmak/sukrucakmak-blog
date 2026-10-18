@@ -8,8 +8,7 @@ translation: /blog/parse-xml-list-into-objects
 
 I mentioned the XStream library in [this post](https://www.sukrucakmak.com/xstream-java-to-xml-xml-to-java/). It helps us convert Java to XML and XML to Java. However, I realized I skipped a topic: what if instead of an object we have objects — what will the output look like then? If there's a bunch of objects as a list in the XML, how do we convert them to Java? In this post I'll try to shed light on these topics, but reading the first post is a must since I'll use the "Ders" and "Ogretmen" classes from there.
 Generating the XML output of a single "Ders" object was very easy and produced a result like the one below.
-[xml]
-
+```xml
 <Ders>
 
   <id>1</id>
@@ -25,13 +24,11 @@ Generating the XML output of a single "Ders" object was very easy and produced a
   </ogretmen>
 
 </Ders>
-
-[/xml]
+```
 But what if there are multiple "Ders" objects — how will the output take shape and, before that, how do we generate it 🙂 In the code below I'll create two "Ogretmen" objects and use them to create three "Ders" objects (between lines 15 and 19). You can check the classes' members on the page I linked above.
 Then I'll add the objects I created to a list (between lines 21 and 24).
 Finally I'll give "my list" to the *toXML()* method of my **XStream** object. Yes, in the previous example I passed my "Ders" object directly; this time I'm passing the list (between lines 26 and 28).
-[java]
-
+```java
 package org.sukru.xstream.test;
 import java.util.ArrayList;
 
@@ -69,11 +66,9 @@ public class XStreamListTest {
 	}
 
 }
-
-[/java]
+```
 And finally, when we get the output, the XML looks like this.
-[xml]
-
+```xml
 <list>
 
   <Ders>
@@ -119,27 +114,22 @@ And finally, when we get the output, the XML looks like this.
   </Ders>
 
 </list>
-
-[/xml]
+```
 What are the differences? Since there are multiple ders objects,
 
 they sit between
 
-[xml]
-
+```xml
 <list>
 
 </list>
-
-[/xml]
+```
 
 and the "ogretmen" info of the "Ders" object whose id is 3
 
-[xml]
-
+```xml
 <ogretmen reference="../../Ders[2]/ogretmen"/>
-
-[/xml]
+```
 
 is shown as being the same as the "ogretmen" info of the "Ders" at position 2.
 Now let's get to our main topic: take this XML output, create a new xml file named "dersler.xml", and place it under a "files" directory we'll create in our project. You can see the project's new structure below.
@@ -157,8 +147,7 @@ By reading this xml file we'll assign it to our object via **XStream**'s *fromXM
 5. Iterate the list to show we got the objects back.
 
 If we write the code;
-[java]
-
+```java
 package org.sukru.xstream.test;
 import java.io.BufferedReader;
 
@@ -206,8 +195,7 @@ public class XStreamReadingListTest {
 	}
 
 }
-
-[/java]
+```
 We printed to the screen at the end — let's give the output too 🙂
 
 ```

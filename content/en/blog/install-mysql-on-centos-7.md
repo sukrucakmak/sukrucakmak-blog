@@ -8,7 +8,9 @@ translation: /blog/install-mysql-on-centos-7
 
 CentOS uses yum as its package manager, so we need to update it first. We can do that with the command below.
 
-[shell]sudo yum update[/shell]
+```bash
+sudo yum update
+```
 
 Once the update finishes we need to pick the MySQL server version we want to download. Let's select our version from the MySQL download page ([http://dev.mysql.com/downloads/repo/yum/](http://dev.mysql.com/downloads/repo/yum/)).
 In this example I picked the following version.
@@ -16,29 +18,45 @@ In this example I picked the following version.
 https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 Now let's download that version.
 
-[shell]sudo rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm[/shell]
+```bash
+sudo rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+```
 Once the download finishes, let's start the installation.
 
-[shell]sudo yum install mysql-community-server[/shell]
+```bash
+sudo yum install mysql-community-server
+```
 When the installation is done we can start MySQL Community Server.
 
-[shell]sudo service mysqld start[/shell]
+```bash
+sudo service mysqld start
+```
 We can check the server status with the following command.
 
-[shell]sudo service mysqld status[/shell]
+```bash
+sudo service mysqld status
+```
 If we see Active (running), we're successful.
 Now we should have questions in mind 🙂 I installed it, but what's my password, which port can I reach it on, etc.…
 
 First let's set our password. A random password was generated during installation — let's grab it first.
 
-[shell]sudo grep ‘temporary password’ /var/log/mysqld.log[/shell]
+```bash
+sudo grep ‘temporary password’ /var/log/mysqld.log
+```
 Great, we now have the random password. Let's change it — for that we need to connect to MySQL Server.
 
-[shell]mysql -uroot -p[/shell]
+```bash
+mysql -uroot -p
+```
 We should land on the MySQL console — you'll see it as "mysql>". Let's change the password.
 
-[shell]ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘YeniSifrem123!’;[/shell]
+```bash
+ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘YeniSifrem123!’;
+```
 Let's check the port too and finish up.
 
-[shell]select @@port;[/shell]
+```bash
+select @@port;
+```
 By the way, to exit the MySQL console type "exit;" and hit Enter — don't linger there 🙂

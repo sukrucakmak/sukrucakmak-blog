@@ -16,11 +16,9 @@ Java Package (paket) kavramı Java sınıflarını düzenli tertipli biçimde bi
 
 Çoğu yazılım standartı gibi, bu da zorunlu olmayan ama bu şekil kullanılırsa insanların daha rahat anlayabilecekleri ve anlaşabilecekleri bir düzen olarak karşımıza çıkmaktadır. Örnek olarak ben şu an **[i2i systems](http://www.i2i-systems.com)** isimli şirkette çalışıyorum ve “EasyProv” adında ticari (commercial) bir uygulama yazıyorum, uygulama üzerindeki sık kullandığım araçları (utilities) bir paket altında toplamak istiyorum;
 
-[java]
-
+```java
 package com.i2i.easyprov.util;
-
-[/java]
+```
 
 Tekrar okursak şu bilgileri ediniyoruz;
 
@@ -33,6 +31,7 @@ Tekrar okursak şu bilgileri ediniyoruz;
 4. **util** – util (utilities) yani araçlar burada bulunuyor
 
 Kısacası bu paket altında neler bulabileceğim önceden görünüyor 🙂
+
 **Java Temel Paketlerinden bazıları…**
 
 - [java.lang](http://download.oracle.com/javase/6/docs/api/java/lang/package-summary.html) 	— dilin işlevselliği ve temel tiplerin bulunduğu paket, String, Integer gibi…
@@ -58,6 +57,7 @@ Kısacası bu paket altında neler bulabileceğim önceden görünüyor 🙂
 Umarım faydalı olmuştur 🙂 en sevmediğiniz paket “default package” olsun.
 
 Kolay gelsin.
+
 **Kaynaklar**
 
 1. http://download.oracle.com/javase/tutorial/java/concepts/package.html

@@ -24,8 +24,7 @@ Bu adımlardan sonra log4j ile çalışmaya hazırız. Örnek olması açısınd
 
 fakat ben log4j’nin sağlamış olduğu “**BasicConfigurator**” sınıfının “***configure()***” metodu yardımıyla herhangi bir dosya kullanmadan log4j’i ayağa kaldıracağım.
 
-[java]
-
+```java
 package org.sukru.log4j;
 public class Student {
 	private Long studentNumber;
@@ -46,11 +45,9 @@ public class Student {
 	// getters and setters
 
 }
-
-[/java]
+```
 Loj4j’yi ayağa kaldırıp, kullandığımız test sınıfımızı da yazalım.
-[java]
-
+```java
 package org.sukru.log4j;
 import org.apache.log4j.BasicConfigurator;
 
@@ -71,16 +68,13 @@ public class Log4jTest {
 	}
 
 }
-
-[/java]
+```
 Bu sınıfı çalıştırdığımız zaman çıktısı şu şekilde olacaktır.
-[shell]
-
+```bash
 0 [main] INFO org.sukru.log4j.Student  – Initializing a new Student…
 
 2 [main] INFO org.sukru.log4j.Student  – new Student initialized: Yunus Emre Aslan
-
-[/shell]
+```
 Bilgi amaçlı “**info(Object message)**” metodunu kullandım ama isteğe ve amaca göre şu metodlar kullanılabilir;
 
 - fatal()

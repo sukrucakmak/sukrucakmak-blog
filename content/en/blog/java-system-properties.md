@@ -10,8 +10,7 @@ In Java we can get **system information** through the keywords Java provides us.
 `Properties properties = System.getProperties();`
 
 With this expression we take the system properties into a "properties" object, then take the **entrySet** into a **Set** object with the expression below so we can iterate over it and look at each value one by one — because later we can look only at the ones that will be useful to us from time to time. You can see the example code below.
-[java]
-
+```java
 package org.sukru.system;
 import java.util.Map.Entry;
 
@@ -33,8 +32,7 @@ public class SystemProperties {
 
 	}
 }
-
-[/java]
+```
 When we run this code we can reach all the property keys. In the output each line gives a different piece of information about the system — you'll usually understand at a glance what you can query. Example: **java.version** gives you the Java version installed on the system. I've attached the output below.
 
 ```
@@ -148,8 +146,7 @@ sun.cpu.isalist
 Still, let me query a few of them on my own machine — let's see what kind of environment I'm working in 🙂
 
 We'll pass them as parameters to the `System.getProperty(String property)` expression and it will return the value.
-[java]
-
+```java
 package org.sukru.system;
 public class SystemInfo {
 	public static void main(String[] args) {
@@ -166,8 +163,7 @@ public class SystemInfo {
 
 	}
 }
-
-[/java]
+```
 And the output, as seen;
 
 ```

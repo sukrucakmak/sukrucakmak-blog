@@ -11,8 +11,7 @@ translation: /blog/xstream-java-to-xml-xml-to-java
 A very elegant library we can use to get the XML output of a Java object or to convert data given as XML back into a Java object. It lives at [http://xstream.codehaus.org/](http://xstream.codehaus.org/).
 What needs to be done is quite simple: download the relevant jars and add them to our project's libraries.
 To make the library's usage easy to understand, I explained it below through two objects named "Ders" (Course) and "Ogretmen" (Teacher); you can run the code in your own environment too.
-[java title=”<strong>Ders class</strong>”]
-
+```java
 package org.sukru.xstream.entity;
 public class Ders {
  public Long id;
@@ -33,9 +32,8 @@ public class Ders {
 //getters and setters
 
 }
-[/java]
-[java title=”<strong>Ogretmen class</strong>”]
-
+```
+```java
 package org.sukru.xstream.entity;
 public class Ogretmen {
  public String ad;
@@ -59,9 +57,8 @@ public class Ogretmen {
  }
 
 }
-[/java]
-[java title=”<strong>Let's start using XStream…</strong>”]
-
+```
+```java
 package org.sukru.xstream.test;
 import org.sukru.xstream.entity.Ders;
 
@@ -102,11 +99,9 @@ public class XStreamTest {
  }
 
 }
-
-[/java]
+```
 And the XML output looks like the one below.
-[xml]
-
+```xml
 <Ders>
 
   <id>1</id>
@@ -122,8 +117,9 @@ And the XML output looks like the one below.
   </ogretmen>
 
 </Ders>
-
-[/xml]
+```
 When we print the object created from the XML to the console, we see it looks like this.
 
-[plain]XML den Ders: 1 – Software Engineering – Ogretmen [ad=Yasin, soyad=Kenar][/plain]
+```text
+XML den Ders: 1 – Software Engineering – Ogretmen [ad=Yasin, soyad=Kenar]
+```

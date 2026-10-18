@@ -20,21 +20,23 @@ Now let's build our first application with JSF 2. We need the following ingredie
 
 Let's start Eclipse and open a new workspace. First let's register the "Server". After right-clicking in the Server tab and following **New > Server**, you can point at Tomcat's location as shown below.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-12.55.44-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-12.55.44-PM.png)
+
 **Creating the Project**
 
 Now in the "Package Explorer" or "Project Explorer" view, we create the project via **New > Dynamic Web Project** as shown below. First we fill in fields like the project name.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-1.00.59-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-1.00.59-PM.png)
 Then by clicking Next and Next again we make it generate the "web.xml" file as shown below, and hit the "finish" button.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-2.53.42-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-2.53.42-PM.png)
+
 **Required Jars for JSF 2**
 
 There are a few steps we need to take for our JSF 2 application to run; first, let's copy the 2 jar files we mentioned at the beginning into the **WEB-INF/lib** directory — our project should look like the one below.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-06-at-11.43.46-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-06-at-11.43.46-PM.png)
+
 **web.xml Settings**
 
 For our JSF 2 application to be interpreted by the server we need to add the following lines into web.xml.
-[xml]
-
+```xml
         <!– Faces Servlet –>
 
 	<servlet>
@@ -55,11 +57,9 @@ For our JSF 2 application to be interpreted by the server we need to add the fol
 		<url-pattern>*.jsf</url-pattern>
 
 	</servlet-mapping>
-
-[/xml]
+```
 After adding these lines, web.xml will look like the one below.
-[xml]
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -98,13 +98,12 @@ After adding these lines, web.xml will look like the one below.
 	</welcome-file-list>
 
 </web-app>
+```
 
-[/xml]
 **Creating an xhtml Page**
 
 Now all our infrastructure preparations are done — time to create a page and run it. We create a file named index.xhtml under the WebContent directory and edit it as below.
-[html]
-
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -128,8 +127,8 @@ Now all our infrastructure preparations are done — time to create a page and r
 </h:body>
 
 </html>
+```
 
-[/html]
 **Running the Project**
 
 We add our project under Tomcat via **Add and Remove** in Tomcat's menu.

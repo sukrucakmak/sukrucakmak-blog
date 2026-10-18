@@ -8,8 +8,7 @@ translation: /en/blog/parse-xml-list-into-objects
 
 XStream kütüphanesinden [buradaki](https://www.sukrucakmak.com/xstream-java-to-xml-xml-to-java/) yazıda bahsetmiştim. Java’dan XML’e, XML’den Java’ya dönüşüm yapmamıza yardımcı oluyordu. Yalnız bir konuyu es geçtiğimi farkettim, ya nesne yerine nesneler olsa o zaman nasıl bir çıktı alacağız? XML’de liste halinde bir sürü nesne olsa o zaman nasıl Java’ya çevireceğiz? Bu yazıda bu konuları aydınlatmaya çalışacağım, fakat ilk yazının mutlaka okunması gerek, çünkü oradaki “Ders” ve “Ogretmen” sınıflarını kullanacağım.
 Tek bir “Ders” nesnesinin XML çıktısını oluşturmak çok kolaydı ve aşağıdaki gibi bir sonuç veriyordu.
-[xml]
-
+```xml
 <Ders>
 
   <id>1</id>
@@ -25,13 +24,11 @@ Tek bir “Ders” nesnesinin XML çıktısını oluşturmak çok kolaydı ve a�
   </ogretmen>
 
 </Ders>
-
-[/xml]
+```
 Peki ama birden fazla “Ders” nesnesi olsa ne olacak, çıktı nasıl şekillenecek ve öncesinde biz nasıl ürettireceğiz 🙂 Aşağıda kodda, iki adet “Ogretmen” nesnesi üretip bunları kullanarak da üç adet “Ders” nesnesi oluşturacağım (15 ve 19. satırlar arası). Sınıfların özelliklerine yukarıda bağlantısını verdiğim sayfadan bakabilirsiniz.
 Sonra bu oluşturduğum nesneleri bir listeye ekleyeceğim (21 ve 24. satırlar arası).
 Son olarak da **XStream** nesnemin *toXML()* metoduna “listemi” vereceğim. Evet önceki örnekte direk “Ders” nesnemi vermiştim, bu sefer listeyi veriyorum (26 ve 28. satırlar arası).
-[java]
-
+```java
 package org.sukru.xstream.test;
 import java.util.ArrayList;
 
@@ -69,11 +66,9 @@ public class XStreamListTest {
 	}
 
 }
-
-[/java]
+```
 En son olarak da çıktıyı aldığımızda XML aşağıdaki gibi oluyor.
-[xml]
-
+```xml
 <list>
 
   <Ders>
@@ -119,25 +114,20 @@ En son olarak da çıktıyı aldığımızda XML aşağıdaki gibi oluyor.
   </Ders>
 
 </list>
-
-[/xml]
+```
 Farkları neler? Birden fazla ders nesnesi var
 
-[xml]
-
+```xml
 <list>
 
 </list>
-
-[/xml]
+```
 
 arasında yer alıyor ve id bilgisi 3 olan “Ders” nesnesinin “ogretmen” bilgisi
 
-[xml]
-
+```xml
 <ogretmen reference="../../Ders[2]/ogretmen"/>
-
-[/xml]
+```
 
 şeklinde 2. sıradaki “Ders”in “ogretmen” bilgisi ile aynı olarak gösteriliyor.
 Şimdi asıl konumuza gelelim, bu xml çıktısını alıp yeni bir xml dosyası oluşturalım, adını da “dersler.xml” olarak verip projemizin altında oluşturacağımız “files” dizini altında oluşturalım. Aşağıda projenin yeni yapısını görebilirsiniz.
@@ -155,8 +145,7 @@ Bu xml dosyasını okuyarak **XStream**in *fromXML()* metodu ile nesnemize ataya
 5. Listeyi dönerek nesneyi aldığımızı gösterelim.
 
 Kodunu yazarsak;
-[java]
-
+```java
 package org.sukru.xstream.test;
 import java.io.BufferedReader;
 
@@ -204,8 +193,7 @@ public class XStreamReadingListTest {
 	}
 
 }
-
-[/java]
+```
 En sonunda ekrana bastırmıştık, çıktıyı da verelim 🙂
 
 ```

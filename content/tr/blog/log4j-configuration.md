@@ -58,8 +58,7 @@ Seviyeler arasındaki sıralama da şu şekilde **`DEBUG < INFO < WARN < ERROR <
 | %d | Logun üretildiği zaman. |
 
 Şimdi bu kadar teorik bilgi ile çalışan bir uygulama yapacağım. Projemin altına “**config**” adında bir klasör açıyorum altına da “**log4j.xml**” adını verdiğim aşağıdaki dosyayı hazırlıyorum.
-[xml]
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
@@ -80,8 +79,7 @@ Seviyeler arasındaki sıralama da şu şekilde **`DEBUG < INFO < WARN < ERROR <
 
  </root>
 </log4j:configuration>
-
-[/xml]
+```
 Şimdi yukarıdaki xml’i biraz açıklayayım; Program bu xml’i okumaya başlarken önce **root** altına bakar ve bir **appender** arar ki oraya log’u yazabilsin. Bizimkinin **stdout** isminde bir tane var, gider onu **appenderlar**arasında bulur, bizimkinin **ConsoleAppender**yani console’a yazan bir **appender**olduğunu anlar, **pattern**‘ine göre **appender**üzerine yazar. Hikaye bu şekilde 🙂
 Şimdi de pattern’i biraz açalım;
 
@@ -100,8 +98,7 @@ Seviyeler arasındaki sıralama da şu şekilde **`DEBUG < INFO < WARN < ERROR <
 - ***%n*** – Yeni gelen mesajı bir alt satırda yaz.
 
 Şimdi log4j’yi kullanalım. Önce bir sınıf yazalım.
-[java]
-
+```java
 package org.sukru.log4j;
 public class Student {
  private Long studentNumber;
@@ -122,11 +119,9 @@ public class Student {
   // getters and setters
 
 }
-
-[/java]
+```
 Log4j için test sınıfımız.
-[java]
-
+```java
 package org.sukru.log4j;
 import org.apache.log4j.Logger;
 
@@ -153,17 +148,18 @@ public class Log4jTest {
   }
 
 }
-
-[/java]
+```
 Bakalım nasıl bir log elde ettik – bence gayet açıklayıcı- 🙂
-[shell]
+```bash
 2011-06-27 14:42:19,507 [main]  INFO Log4jTest:12 – Initializing a new Student…
 
 2011-06-27 14:42:19,511 [main]  INFO Log4jTest:14 – new Student initialized: Tuncay Uzun
-[/shell]
+```
 Şimdi xml dosyası ile biraz oynayalım ve **root** altına şu ifadeyi yazarak log seviyemizi **info** dan daha az kapsamlı **warn**a çekelim. (Yukarıda sıralamasını yazmıştım 😉 )
 
-[xml]<level value="warn" />[/xml]
+```xml
+<level value="warn" />
+```
 
 Şimdi tekrar çalıştırırsak, herhangi bir log yazmadığını görürüz 🙂 Yani xml deki tek bir ifade ile tüm projedeki log seviyesini **warn** yaptık ve bizim **info** olara baktıklarımızın loga yazılmasını engelledik, varsa eğer **warn**ve üzeri ifadeler görülecek 😉
 Kolay gelsin.

@@ -20,21 +20,23 @@ JSF, Model-View-Controller (MVC) tabanlı olduğundan Java sınıflarımız ile 
 
 Eclipse başlatıp yeni bir çalışma alanı (workspace) açalım. İlk olarak “Server”ı tanıtalım. Server tabında sağ tıklayarak **New > Server** yolunu takip ettikten sonra Tomcat’in yerini aşağıdaki gibi gösterebilirsiniz.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-12.55.44-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-12.55.44-PM.png)
+
 **Proje Oluşturma**
 
 Şimdi “Package Explorer” ya da “Project Explorer” görünümünde **New > Dynamic Web Project** yolu ile aşağıdaki gibi projeyi oluşturuyoruz. Önce proje ismi gibi alanları dolduruyoruz.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-1.00.59-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-1.00.59-PM.png)
 Sonra ileri ve tekrar ileri diyerek aşağıdaki gibi “web.xml” dosyasını oluşturmasını sağlayıp “finish” butonuna basarız.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-2.53.42-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-02-at-2.53.42-PM.png)
+
 **JSF 2 için Gerekli Jarlar**
 
 JSF 2 uygulamamızın çalışması için yapmamız gereken bir kaç adım var, ilk olarak en başta belirttiğimiz 2 adet jar dosyasını **WEB-INF/lib** dizini altına kopyalayalım, projemizin görünümü aşağıdaki gibi olmalı.
 [![](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-06-at-11.43.46-PM.png)](/images/javaserver-faces-2-jsf-2-Screen-Shot-2011-09-06-at-11.43.46-PM.png)
+
 **web.xml Ayarları**
 
 JSF 2 uygulamamızın server tarafından yorumlanabilmesi için web.xml içine şu satırları eklememiz lazım.
-[xml]
-
+```xml
         <!– Faces Servlet –>
 
 	<servlet>
@@ -55,11 +57,9 @@ JSF 2 uygulamamızın server tarafından yorumlanabilmesi için web.xml içine �
 		<url-pattern>*.jsf</url-pattern>
 
 	</servlet-mapping>
-
-[/xml]
+```
 Bu satırları ekledikten sonra web.xml dosyasının görünümü aşağıdaki gibi olacaktır.
-[xml]
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -98,13 +98,12 @@ Bu satırları ekledikten sonra web.xml dosyasının görünümü aşağıdaki g
 	</welcome-file-list>
 
 </web-app>
+```
 
-[/xml]
 **xhtml Sayfası Oluşturmak**
 
 Artık tüm altyapı hazırlıklarımız tamam, sıra geldi bir sayfa oluşturup çalıştırmaya. WebContent dizini altına index.xhtml adında bir dosya oluşturup aşağıdaki gibi düzenliyoruz.
-[html]
-
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -128,8 +127,8 @@ Artık tüm altyapı hazırlıklarımız tamam, sıra geldi bir sayfa oluşturup
 </h:body>
 
 </html>
+```
 
-[/html]
 **Projenin Çalıştırılması**
 
 Tomcat’in menüsünden **Add and Remove** aracılığı ile projemizi Tomcat altına ekliyoruz.
