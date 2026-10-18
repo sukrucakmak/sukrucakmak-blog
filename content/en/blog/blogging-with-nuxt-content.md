@@ -3,7 +3,7 @@ title: Blogging with Nuxt Content
 description: The technical stack behind this site — Nuxt 4, Nuxt Content collections, and a bilingual content layout.
 date: 2026-10-18
 tags: [nuxt, vue, web]
-translation: /blog/nuxt-content-ile-blog-yazmak
+translation: /blog/blogging-with-nuxt-content
 ---
 
 As someone who has spent 20 years on the backend with Java and Spring, I visit the frontend world occasionally. For this blog I chose **Nuxt Content** for a simple reason: publishing is just opening a markdown file.
@@ -33,7 +33,7 @@ Each post declares a `translation` field in frontmatter — the route path of it
 ```yaml
 ---
 title: Blogging with Nuxt Content
-translation: /blog/nuxt-content-ile-blog-yazmak
+translation: /blog/blogging-with-nuxt-content
 ---
 ```
 

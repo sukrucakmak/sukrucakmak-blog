@@ -14,7 +14,8 @@ const target = computed(() => {
 
 <template>
   <!-- Plain <a>: target is already a localized path and i18n's NuxtLink
-       would re-prefix it (e.g. /hakkinda -> /en/hakkinda). -->
+       would re-localize it against the current locale (e.g. a TR path
+       rendered on an EN page gets prefixed to a nonexistent /en route). -->
   <a
     v-if="other && target"
     :href="target"

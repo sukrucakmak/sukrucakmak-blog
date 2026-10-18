@@ -1,7 +1,7 @@
 ---
 title: About
 description: Şükrü Çakmak — computer engineer, Java and Spring developer, community organizer.
-translation: /hakkinda
+translation: /about
 ---
 
 Hi! I'm Şükrü Çakmak, a computer engineer who has been developing software for over 20 years. Most of my career has been spent in the **Java** and **Spring** ecosystem, working as a developer, architect, and consultant on enterprise-scale projects.

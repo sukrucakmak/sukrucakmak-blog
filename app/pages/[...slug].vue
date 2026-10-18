@@ -4,7 +4,7 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
 // route.params.slug excludes the locale prefix, so the content path is
-// /<locale>/<stem> — e.g. /tr/blog/my-post, /en/hakkinda.
+// /<locale>/<stem> — e.g. /tr/blog/my-post, /en/about.
 const stem = '/' + ((route.params.slug as string[] | undefined) ?? []).join('/')
 
 const { data: page } = await useAsyncData(`page-${locale.value}-${stem}`, () => {

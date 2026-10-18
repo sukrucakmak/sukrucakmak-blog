@@ -6,6 +6,7 @@ Personal blog of Şükrü Çakmak — bilingual (TR/EN), built with Nuxt 4, Nuxt
 
 - **Nuxt 4** + **@nuxt/content 3** — markdown-driven content
 - **@nuxtjs/i18n** — Turkish (default, no prefix) + English (`/en` prefix)
+- **@nuxt/ui** + Tailwind — Nuxt UI components, Public Sans via @nuxt/fonts
 - Static output via `npm run generate`
 
 ## Content layout
@@ -13,7 +14,7 @@ Personal blog of Şükrü Çakmak — bilingual (TR/EN), built with Nuxt 4, Nuxt
 ```text
 content/
   tr/
-    hakkinda.md           # about page  -> /hakkinda
+    about.md              # about page  -> /about
     blog/<slug>.md        # posts       -> /blog/<slug>
   en/
     about.md              # about page  -> /en/about
@@ -32,7 +33,7 @@ translation: /en/blog/post-title   # route path of the counterpart (optional)
 ---
 ```
 
-- Slugs do **not** need to match across languages; pair translated posts with the `translation` field (a route path like `/en/blog/x` or `/blog/x`) so the language switcher jumps straight to the other version.
+- File names are always English; only the file's prose is translated. Translated pairs conventionally share the same filename (`tr/blog/x.md` ↔ `en/blog/x.md`), but they don't have to — pair translated posts with the `translation` field (a route path like `/en/blog/x` or `/blog/x`) so the language switcher jumps straight to the other version.
 - Posts without a translation simply exist in one locale.
 - Regular pages (about, etc.) live outside `blog/` and are rendered by the same catch-all page.
 

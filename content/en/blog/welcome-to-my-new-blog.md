@@ -3,7 +3,7 @@ title: Welcome to My New Blog
 description: From WordPress to Nuxt Content — the blog's new stack and the migration plan.
 date: 2026-10-18
 tags: [announcement, blog]
-translation: /blog/yeni-bloga-hos-geldiniz
+translation: /blog/welcome-to-my-new-blog
 ---
 
 For years I blogged on [sukrucakmak.com](https://sukrucakmak.com) with WordPress. This site now runs on **Nuxt 4** and **Nuxt Content** — static, fast, and entirely markdown-based.
