@@ -1,5 +1,6 @@
 ---
 title: "XML’deki Listeyi Okuyarak Nesnelere Çevirme"
+description: XML dosyasındaki liste elemanlarını Java nesnelerine dönüştürme.
 date: 2011-08-11
 tags: [java, xml]
 ---

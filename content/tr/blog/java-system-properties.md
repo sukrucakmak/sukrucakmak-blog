@@ -1,5 +1,6 @@
 ---
 title: "Java System Properties"
+description: Java System Properties ile çalışma zamanında ortam ve sistem bilgilerini okuma.
 date: 2011-06-30
 tags: [java]
 ---

@@ -1,5 +1,6 @@
 ---
 title: "SFTP Configuration on CentOS"
+description: Configuring an SFTP-only user and upload directory on CentOS via sshd_config.
 date: 2021-06-20
 tags: [application servers]
 ---

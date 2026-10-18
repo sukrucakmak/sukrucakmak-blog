@@ -1,5 +1,6 @@
 ---
 title: "Install Go on CentOS"
+description: Installing Go on CentOS: download, extract to /usr/local, and PATH configuration.
 date: 2022-10-31
 tags: [application servers]
 ---

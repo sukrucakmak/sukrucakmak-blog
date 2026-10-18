@@ -1,5 +1,6 @@
 ---
 title: "JSF 2 + PrimeFaces"
+description: JSF 2 üzerinde PrimeFaces bileşen kütüphanesiyle zengin kullanıcı arayüzleri geliştirmek.
 date: 2011-09-05
 tags: [java, jsf]
 ---

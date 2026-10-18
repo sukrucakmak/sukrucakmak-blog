@@ -1,5 +1,6 @@
 ---
 title: "Web Servis İstemcisi (Web Service Client)"
+description: Java ile bir web servis istemcisi (web service client) yazma adımları.
 date: 2011-07-01
 tags: [java, web service]
 ---

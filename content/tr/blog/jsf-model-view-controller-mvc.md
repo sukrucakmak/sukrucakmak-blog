@@ -1,5 +1,6 @@
 ---
 title: "JSF Model-View-Controller (MVC)"
+description: JSF'in MVC mimarisini nasıl uyguladığı: model, view ve controller ayrımı.
 date: 2011-07-05
 tags: [java, jsf]
 ---

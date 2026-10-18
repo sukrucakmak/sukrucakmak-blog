@@ -1,5 +1,6 @@
 ---
 title: "VNC ile RHEL Uzak Masaüstü"
+description: VNC ile RHEL sunucuya uzak masaüstü bağlantısı kurma adımları.
 date: 2019-11-08
 tags: [linux]
 ---

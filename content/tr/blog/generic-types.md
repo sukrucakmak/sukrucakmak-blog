@@ -1,5 +1,6 @@
 ---
 title: "Generic Types"
+description: Java'da generic tiplerin neden ortaya çıktığı ve ClassCastException'lardan nasıl korundukları.
 date: 2011-07-08
 tags: [generics, java]
 ---

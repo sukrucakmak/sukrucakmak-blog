@@ -1,5 +1,6 @@
 ---
 title: "SSH Key Pair Oluşturmak"
+description: ssh-keygen ile SSH key pair oluşturma ve sunucuya parolasız bağlantı kurma adımları.
 date: 2019-06-26
 tags: [application servers]
 ---

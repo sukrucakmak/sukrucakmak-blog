@@ -1,5 +1,6 @@
 ---
 title: "Linux X11Forwarding"
+description: SSH üzerinden X11Forwarding açarak Linux sunucunun grafik ekranını yerel masaüstüne taşımak.
 date: 2019-11-05
 tags: [application servers]
 ---

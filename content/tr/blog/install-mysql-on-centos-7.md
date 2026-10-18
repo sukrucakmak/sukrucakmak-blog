@@ -1,5 +1,6 @@
 ---
 title: "CentOS 7 Üzerine MySQL Kurmak"
+description: CentOS 7 üzerine yum ile MySQL kurulumu ve ilk yapılandırma adımları.
 date: 2017-09-27
 tags: [database management systems, mysql]
 ---
