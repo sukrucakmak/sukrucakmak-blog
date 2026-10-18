@@ -7,6 +7,7 @@ const localePath = useLocalePath()
 const items = computed<NavigationMenuItem[]>(() => [
   { label: t('nav.blog'), to: localePath('/blog') },
   { label: t('nav.about'), to: localePath('/about') },
+  { label: t('nav.contact'), to: localePath('/contact') },
 ])
 </script>
 
