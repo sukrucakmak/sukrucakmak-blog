@@ -10,7 +10,7 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 
 | | Kurum | Görev | Dönem |
 |---|---|---|---|
-| <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Yazılım mühendisliği zekâsı platformu | Kurucu Ortak & CTO | Ara 2022 – günümüz |
+| <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Yazılım mühendisliği zekâsı platformu | Kurucu Ortak & CTO | 2022 – günümüz |
 | <img src="/logos/chainerist.png" alt="Chainerist" width="36"> | **Chainerist**<br>Blockchain eğitim ve içerik platformu | Kurucu Ortak & CTO | 2022 – günümüz |
 | <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Dış ticaret süreçleri yazılımları | CTO | 2020 – 2022 |
 | <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Bankacılık süreçleri | Çözüm Mimarı | 2018 – 2020 |
@@ -21,7 +21,6 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 | <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems projesi — billing/charging | Geliştirici | 2011 – 2015 |
 | <img src="/logos/anadolu-bilisim.jpg" alt="Anadolu Bilişim" width="36"> | **Anadolu Bilişim**<br>Kurumsal yazılım geliştirme | Yazılım Geliştirici | 2009 – 2011 |
 | <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" width="36"> | **Kadir Has Üniversitesi**<br>Bilgisayar Mühendisliği bölümü | Araştırma Görevlisi | 2008 – 2009 |
-| <img src="/logos/altinbas.png" alt="Altınbaş Üniversitesi" width="36"> | **Altınbaş Üniversitesi**<br>Yazılım mühendisliği dersleri | Eğitmen | — |
 
 ## Eğitim
 

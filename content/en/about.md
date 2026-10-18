@@ -10,7 +10,7 @@ Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). 
 
 | | Organization | Role | Period |
 |---|---|---|---|
-| <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Software engineering intelligence platform | Co-Founder & CTO | Dec 2022 – present |
+| <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Software engineering intelligence platform | Co-Founder & CTO | 2022 – present |
 | <img src="/logos/chainerist.png" alt="Chainerist" width="36"> | **Chainerist**<br>Blockchain education and content platform | Co-Founder & CTO | 2022 – present |
 | <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Foreign-trade software | CTO | 2020 – 2022 |
 | <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Banking processes | Solution Architect | 2018 – 2020 |
@@ -21,7 +21,6 @@ Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). 
 | <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems project — billing/charging | Developer | 2011 – 2015 |
 | <img src="/logos/anadolu-bilisim.jpg" alt="Anadolu Bilişim" width="36"> | **Anadolu Bilişim**<br>Enterprise software development | Software Developer | 2009 – 2011 |
 | <img src="/logos/khas.svg" alt="Kadir Has University" width="36"> | **Kadir Has University**<br>Computer Engineering department | Research Assistant | 2008 – 2009 |
-| <img src="/logos/altinbas.png" alt="Altınbaş University" width="36"> | **Altınbaş University**<br>Software engineering courses | Lecturer | — |
 
 ## Education
 
