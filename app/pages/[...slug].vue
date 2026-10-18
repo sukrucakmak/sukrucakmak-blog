@@ -25,19 +25,29 @@ useSeoMeta({
 </script>
 
 <template>
-  <article v-if="page" class="content-page">
-    <NuxtLink v-if="isPost" :to="localePath('/blog')" class="back-link">
-      {{ t('post.backToBlog') }}
-    </NuxtLink>
-    <h1>{{ page.title }}</h1>
-    <div v-if="isPost" class="post-meta">
+  <UPage v-if="page">
+    <UButton
+      v-if="isPost"
+      :to="localePath('/blog')"
+      :label="t('post.backToBlog')"
+      variant="link"
+      icon="i-lucide-arrow-left"
+      class="px-0"
+    />
+    <UPageHeader :title="page.title" :description="page.description" />
+    <div v-if="isPost" class="flex flex-wrap items-center gap-3 text-sm text-muted -mt-4">
       <time v-if="page.date" :datetime="page.date">{{ formatPostDate(page.date, locale) }}</time>
-      <ul v-if="page.tags?.length" class="tags">
-        <li v-for="tag in page.tags" :key="tag" class="tag">
-          {{ tag }}
-        </li>
-      </ul>
+      <UBadge
+        v-for="tag in page.tags ?? []"
+        :key="tag"
+        :label="tag"
+        variant="subtle"
+        color="neutral"
+        size="sm"
+      />
     </div>
-    <ContentRenderer :value="page" class="prose" />
-  </article>
+    <UPageBody>
+      <ContentRenderer :value="page" />
+    </UPageBody>
+  </UPage>
 </template>

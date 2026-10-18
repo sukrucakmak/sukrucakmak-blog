@@ -9,11 +9,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    <h1>{{ $t('blog.title') }}</h1>
-    <p class="page-description">
-      {{ $t('blog.description') }}
-    </p>
-    <PostList :posts="posts ?? []" />
-  </div>
+  <UPage>
+    <UPageHeader
+      :title="$t('blog.title')"
+      :description="$t('blog.description')"
+    />
+    <UPageBody>
+      <PostList :posts="posts ?? []" />
+    </UPageBody>
+  </UPage>
 </template>

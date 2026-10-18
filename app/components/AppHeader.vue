@@ -1,25 +1,23 @@
 <script setup lang="ts">
+import type { NavigationMenuItem } from '@nuxt/ui'
+
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
-const aboutRoute = computed(() => localePath(locale.value === 'tr' ? '/hakkinda' : '/about'))
+const items = computed<NavigationMenuItem[]>(() => [
+  { label: t('nav.blog'), to: localePath('/blog') },
+  { label: t('nav.about'), to: localePath(locale.value === 'tr' ? '/hakkinda' : '/about') },
+])
 </script>
 
 <template>
-  <header class="site-header">
-    <div class="container header-inner">
-      <NuxtLink :to="localePath('/')" class="site-title">
-        {{ t('site.title') }}
-      </NuxtLink>
-      <nav class="nav">
-        <NuxtLink :to="localePath('/blog')">
-          {{ t('nav.blog') }}
-        </NuxtLink>
-        <NuxtLink :to="aboutRoute">
-          {{ t('nav.about') }}
-        </NuxtLink>
-        <LangSwitcher />
-      </nav>
-    </div>
-  </header>
+  <UHeader :title="t('site.title')" :to="localePath('/')">
+    <UNavigationMenu :items="items" variant="link" />
+    <template #right>
+      <LangSwitcher />
+    </template>
+    <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
+    </template>
+  </UHeader>
 </template>

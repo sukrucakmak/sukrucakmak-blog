@@ -4,13 +4,21 @@ const year = new Date().getFullYear()
 </script>
 
 <template>
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© {{ year }} {{ t('site.title') }} · {{ t('footer.builtWith') }}</p>
-      <p class="footer-links">
-        <a href="https://github.com/sukrucakmak" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://sukrucakmak.com" target="_blank" rel="noopener">sukrucakmak.com</a>
+  <UFooter>
+    <template #left>
+      <p class="text-sm text-muted">
+        © {{ year }} {{ t('site.title') }} · {{ t('footer.builtWith') }}
       </p>
-    </div>
-  </footer>
+    </template>
+    <template #right>
+      <div class="flex gap-4 text-sm">
+        <ULink to="https://github.com/sukrucakmak" target="_blank" class="text-muted hover:text-default">
+          GitHub
+        </ULink>
+        <ULink to="https://sukrucakmak.com" target="_blank" class="text-muted hover:text-default">
+          sukrucakmak.com
+        </ULink>
+      </div>
+    </template>
+  </UFooter>
 </template>

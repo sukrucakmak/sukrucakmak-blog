@@ -8,9 +8,11 @@ useHead(() => ({
 </script>
 
 <template>
-  <NuxtRouteAnnouncer />
-  <NuxtLayout>
-    <!-- key remounts the catch-all page between slugs (post -> post links) -->
-    <NuxtPage :key="route.fullPath" />
-  </NuxtLayout>
+  <UApp>
+    <NuxtRouteAnnouncer />
+    <NuxtLayout>
+      <!-- key remounts the catch-all page between slugs (post -> post links) -->
+      <NuxtPage :key="route.fullPath" />
+    </NuxtLayout>
+  </UApp>
 </template>

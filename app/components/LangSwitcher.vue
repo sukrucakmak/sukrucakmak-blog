@@ -13,7 +13,11 @@ const target = computed(() => {
 </script>
 
 <template>
-  <NuxtLink v-if="other && target" :to="target" class="lang-switch">
-    {{ other.name }}
-  </NuxtLink>
+  <!-- Plain <a>: target is already a localized path and i18n's NuxtLink
+       would re-prefix it (e.g. /hakkinda -> /en/hakkinda). -->
+  <a
+    v-if="other && target"
+    :href="target"
+    class="inline-flex items-center rounded-full px-2.5 py-1.5 text-xs font-medium ring ring-inset ring-accented text-default bg-default hover:bg-elevated transition-colors"
+  >{{ other.name }}</a>
 </template>

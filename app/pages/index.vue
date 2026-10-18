@@ -4,23 +4,22 @@ const { data: posts } = await useBlogPosts(3)
 </script>
 
 <template>
-  <div>
-    <section class="hero">
-      <h1>{{ $t('home.greeting') }}</h1>
-      <p class="tagline">
-        {{ $t('site.tagline') }}
-      </p>
-      <p class="intro">
-        {{ $t('home.intro') }}
-      </p>
-    </section>
+  <UPage>
+    <UPageHero
+      :title="$t('home.greeting')"
+      :headline="$t('site.tagline')"
+      :description="$t('home.intro')"
+    />
 
-    <section class="recent-posts">
-      <h2>{{ $t('home.recentPosts') }}</h2>
+    <UPageSection :title="$t('home.recentPosts')" :ui="{ container: 'py-0 sm:py-0 lg:py-0' }">
       <PostList :posts="posts ?? []" />
-      <NuxtLink :to="localePath('/blog')" class="all-posts">
-        {{ $t('home.allPosts') }} →
-      </NuxtLink>
-    </section>
-  </div>
+      <UButton
+        :to="localePath('/blog')"
+        :label="$t('home.allPosts')"
+        variant="link"
+        trailing-icon="i-lucide-arrow-right"
+        class="mt-6 px-0"
+      />
+    </UPageSection>
+  </UPage>
 </template>

@@ -15,25 +15,31 @@ const { t, locale } = useI18n()
 </script>
 
 <template>
-  <p v-if="!posts.length" class="empty">
+  <p v-if="!posts.length" class="text-muted">
     {{ t('blog.empty') }}
   </p>
-  <ul v-else class="post-list">
-    <li v-for="post in posts" :key="post.path" class="post-item">
-      <time v-if="post.date" :datetime="post.date">{{ formatPostDate(post.date, locale) }}</time>
-      <h3>
-        <NuxtLink :to="contentPathToRoute(post.path)">
-          {{ post.title }}
-        </NuxtLink>
-      </h3>
-      <p v-if="post.description" class="post-description">
-        {{ post.description }}
-      </p>
-      <ul v-if="post.tags?.length" class="tags">
-        <li v-for="tag in post.tags" :key="tag" class="tag">
-          {{ tag }}
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <UBlogPosts v-else class="grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-6">
+    <UBlogPost
+      v-for="post in posts"
+      :key="post.path"
+      :title="post.title"
+      :description="post.description"
+      :date="post.date ? formatPostDate(post.date, locale) : undefined"
+      :to="contentPathToRoute(post.path)"
+      variant="ghost"
+    >
+      <template v-if="post.tags?.length" #footer>
+        <div class="flex flex-wrap gap-2">
+          <UBadge
+            v-for="tag in post.tags"
+            :key="tag"
+            :label="tag"
+            variant="subtle"
+            color="neutral"
+            size="sm"
+          />
+        </div>
+      </template>
+    </UBlogPost>
+  </UBlogPosts>
 </template>
