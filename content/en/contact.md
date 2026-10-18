@@ -6,7 +6,9 @@ translation: /contact
 
 You can reach me through any of these channels:
 
-- **Email:** [sukru@oobeya.io](mailto:sukru@oobeya.io)
-- **LinkedIn:** [linkedin.com/in/sukrucakmak](https://www.linkedin.com/in/sukrucakmak)
-- **GitHub:** [github.com/sukrucakmak](https://github.com/sukrucakmak)
-- **Web:** [sukrucakmak.com](https://www.sukrucakmak.com)
+| Channel | Address |
+|---|---|
+| Email | [scakmak@gmail.com](mailto:scakmak@gmail.com) |
+| LinkedIn | [linkedin.com/in/sukrucakmak](https://www.linkedin.com/in/sukrucakmak) |
+| GitHub | [github.com/sukrucakmak](https://github.com/sukrucakmak) |
+| Web | [sukrucakmak.com](https://www.sukrucakmak.com) |
