@@ -26,7 +26,12 @@ sudo systemctl disable --now sw-engine sw-cp-server 2>/dev/null   # Plesk'in ken
 sudo dnf install -y nginx
 
 # --- Adım 3: deploy kullanıcısını aç ---
-sudo useradd -r -m -d /var/lib/sukrucakmakcom -s /bin/bash sukrucakmakcom
+# NOT: home'u /home altında tut — /var/lib gibi özel konumlarda SELinux
+# authorized_keys'i sshd'ye okutamaz (pubkey reddedilir).
+sudo useradd -m -d /home/sukrucakmakcom -s /bin/bash sukrucakmakcom
+# Kullanıcıya parola koyma; ama '!' (kilitli) bırakma — RHEL ailesinde kilitli
+# hesap pubkey auth'u da reddeder. '*' = parolasız ama açık:
+sudo usermod -p '*' sukrucakmakcom
 
 # --- Adım 4: SSH key pair üret (kendi bilgisayarında ya da sunucuda) ---
 ssh-keygen -t ed25519 -f deploy_key -C "github-actions-sukrucakmak.com"
@@ -34,11 +39,13 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-actions-sukrucakmak.com"
 #   - deploy_key.pub    → PUBLIC: sunucuda authorized_keys'e ekle (aşağıda)
 
 # --- Adım 5: public key'i kullanıcıya bağla ---
-sudo mkdir -p /var/lib/sukrucakmakcom/.ssh
-echo "ssh-ed25519 AAAA... github-actions-sukrucakmak.com" | sudo tee /var/lib/sukrucakmakcom/.ssh/authorized_keys
-sudo chmod 700 /var/lib/sukrucakmakcom/.ssh
-sudo chmod 600 /var/lib/sukrucakmakcom/.ssh/authorized_keys
-sudo chown -R sukrucakmakcom:sukrucakmakcom /var/lib/sukrucakmakcom/.ssh
+sudo mkdir -p /home/sukrucakmakcom/.ssh
+echo "ssh-ed25519 AAAA... github-actions-sukrucakmak.com" | sudo tee /home/sukrucakmakcom/.ssh/authorized_keys
+sudo chmod 700 /home/sukrucakmakcom/.ssh
+sudo chmod 600 /home/sukrucakmakcom/.ssh/authorized_keys
+sudo chown -R sukrucakmakcom:sukrucakmakcom /home/sukrucakmakcom/.ssh
+# StrictModes: home dizini de group/world-writable OLMAMALI
+sudo chmod 755 /home/sukrucakmakcom
 
 # --- Adım 6: site dizinini hazırla, sahipliğini kullanıcıya ver ---
 sudo mkdir -p /var/www/sukrucakmak.com
@@ -46,6 +53,8 @@ sudo chown sukrucakmakcom:sukrucakmakcom /var/www/sukrucakmak.com
 sudo chmod 755 /var/www/sukrucakmak.com
 # AlmaLinux SELinux: dizine doğru context'i ver (httpd_sys_content_t)
 sudo restorecon -Rv /var/www/sukrucakmak.com
+# .ssh dizini için de (ssh_home_t):
+sudo restorecon -Rv /home/sukrucakmakcom/.ssh
 
 # --- Adım 7: nginx site config ---
 sudo cp deploy/nginx-sukrucakmak.com.conf /etc/nginx/conf.d/sukrucakmak.com.conf
@@ -74,6 +83,34 @@ ssh -i deploy_key sukrucakmakcom@<SUNUCU_IP> 'ls -la /var/www/sukrucakmak.com'
 
 Secrets girildikten sonra `main`'e gelen her merge otomatik deploy eder.
 Elle tetiklemek için: Actions → "Deploy to sukrucakmak.com" → Run workflow.
+
+## Sorun giderme — "Permission denied (publickey,...,password)"
+
+Sunucu key'i reddettiğinde sırayla kontrol et:
+
+```bash
+# Gerçek nedeni log'da gör:
+sudo journalctl -u sshd -e        # veya /var/log/secure
+
+# Kullanıcı kilitli mi ('!' shadow) → pubkey reddedilir:
+sudo passwd -S sukrucakmakcom     # 'L' ise:
+sudo usermod -p '*' sukrucakmakcom
+
+# İzin/sahiplik (StrictModes):
+sudo ls -ld /home/sukrucakmakcom /home/sukrucakmakcom/.ssh \
+  /home/sukrucakmakcom/.ssh/authorized_keys
+# home ≤755, .ssh 700, authorized_keys 600, hepsi sukrucakmakcom:sukrucakmakcom
+
+# Pubkey dosyada mı ve doğru mu:
+sudo cat /home/sukrucakmakcom/.ssh/authorized_keys   # deploy_key.pub ile karşılaştır
+
+# SELinux AVC denial:
+sudo ausearch -m avc -ts recent | grep sshd
+sudo restorecon -Rv /home/sukrucakmakcom
+
+# Yerelde key'in teklif edildiğini doğrula:
+ssh -vvv -i deploy_key sukrucakmakcom@<SUNUCU_IP> 'echo ok'
+```
 
 ## Notlar
 
