@@ -11,6 +11,7 @@ Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). 
 | | Organization | Role | Period |
 |---|---|---|---|
 | <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Software engineering intelligence platform | Co-Founder & CTO | Dec 2022 – present |
+| <img src="/logos/chainerist.png" alt="Chainerist" width="36"> | **Chainerist**<br>Blockchain education and content platform | Co-Founder & CTO | 2022 – present |
 | <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Foreign-trade software | CTO | 2020 – 2022 |
 | <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Banking processes | Solution Architect | 2018 – 2020 |
 | <img src="/logos/i2i-systems.png" alt="i2i Systems" width="36"> | **i2i Systems**<br>Billing/charging solutions for telecom operators | Senior Developer & Software Architect | 2011 – 2018 |

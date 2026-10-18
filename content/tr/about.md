@@ -11,6 +11,7 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 | | Kurum | Görev | Dönem |
 |---|---|---|---|
 | <img src="/logos/oobeya.svg" alt="Oobeya" width="36"> | **Oobeya**<br>Yazılım mühendisliği zekâsı platformu | Kurucu Ortak & CTO | Ara 2022 – günümüz |
+| <img src="/logos/chainerist.png" alt="Chainerist" width="36"> | **Chainerist**<br>Blockchain eğitim ve içerik platformu | Kurucu Ortak & CTO | 2022 – günümüz |
 | <img src="/logos/atez.png" alt="Atez" width="36"> | **Atez Yazılım Teknolojileri**<br>Dış ticaret süreçleri yazılımları | CTO | 2020 – 2022 |
 | <img src="/logos/vakifbank.png" alt="Vakıfbank" width="36"> | **Vakıfbank**<br>Bankacılık süreçleri | Çözüm Mimarı | 2018 – 2020 |
 | <img src="/logos/i2i-systems.png" alt="i2i Systems" width="36"> | **i2i Systems**<br>Telekom operatörlerine billing/charging çözümleri | Kıdemli Geliştirici & Yazılım Mimarı | 2011 – 2018 |
