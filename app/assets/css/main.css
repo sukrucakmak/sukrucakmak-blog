@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Literal font-family so @nuxt/fonts detects and downloads Public Sans. */
+body {
+  font-family: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+}
