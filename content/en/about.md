@@ -18,7 +18,7 @@ Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). 
 | <img src="/logos/turkishairlines.png" alt="Turkish Airlines" width="36"> | **Turkish Airlines**<br>i2i Systems project | Software Architect | 2017 – 2018 |
 | <img src="/logos/vodafone.png" alt="Vodafone" width="36"> | **Vodafone**<br>i2i Systems project — billing/charging | Senior Developer | 2016 – 2017 |
 | <img src="/logos/turktelekom.png" alt="Türk Telekom" width="36"> | **Türk Telekom**<br>i2i Systems project — billing/charging | Senior Developer | 2015 – 2016 |
-| <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems project — billing/charging | Developer | 2011 – 2015 |
+| <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems project — billing/charging | Senior Developer | 2011 – 2015 |
 | <img src="/logos/anadolu-bilisim.jpg" alt="Anadolu Bilişim" width="36"> | **Anadolu Bilişim**<br>Enterprise software development | Software Developer | 2009 – 2011 |
 | <img src="/logos/khas.svg" alt="Kadir Has University" width="36"> | **Kadir Has University**<br>Computer Engineering department | Research Assistant | 2008 – 2009 |
 

@@ -18,7 +18,7 @@ Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağ
 | <img src="/logos/turkishairlines.png" alt="Türk Hava Yolları" width="36"> | **Türk Hava Yolları**<br>i2i Systems projesi | Yazılım Mimarı | 2017 – 2018 |
 | <img src="/logos/vodafone.png" alt="Vodafone" width="36"> | **Vodafone**<br>i2i Systems projesi — billing/charging | Kıdemli Geliştirici | 2016 – 2017 |
 | <img src="/logos/turktelekom.png" alt="Türk Telekom" width="36"> | **Türk Telekom**<br>i2i Systems projesi — billing/charging | Kıdemli Geliştirici | 2015 – 2016 |
-| <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems projesi — billing/charging | Geliştirici | 2011 – 2015 |
+| <img src="/logos/turkcell.svg" alt="Turkcell" width="36"> | **Turkcell**<br>i2i Systems projesi — billing/charging | Kıdemli Geliştirici | 2011 – 2015 |
 | <img src="/logos/anadolu-bilisim.jpg" alt="Anadolu Bilişim" width="36"> | **Anadolu Bilişim**<br>Kurumsal yazılım geliştirme | Yazılım Geliştirici | 2009 – 2011 |
 | <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" width="36"> | **Kadir Has Üniversitesi**<br>Bilgisayar Mühendisliği bölümü | Araştırma Görevlisi | 2008 – 2009 |
 
