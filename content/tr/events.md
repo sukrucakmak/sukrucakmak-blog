@@ -8,17 +8,17 @@ Konuşmacı, panelist veya organizatör olarak katıldığım etkinlikler ve mev
 
 ## Son Etkinlik
 
-### Blamely by Oobeya Lansmanı: AI Coding Attribution (8 Temmuz 2026)
+### Oobeya & Sonar — From AI-Generated Code to Trusted Code (7 Ekim 2026)
 
-Blamely'nin lansman webinari — AI mı insan mı kod kökeni, token maliyet görünürlüğü ve canlı ürün demosu; Abdulkerim Atik ile birlikte (İngilizce).
+Oobeya & Sonar webinarı — AI ile üretilen kodun kalitesi, güvenilirliği ve mühendislik görünürlüğü üzerine (İngilizce).
 
-<div style="position:relative;width:100%;padding-top:56.25%;margin:1rem 0;"><iframe src="https://www.youtube.com/embed/OifkmwXWoog" title="Blamely by Oobeya Launch: AI Coding Attribution" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
+<div style="position:relative;width:100%;padding-top:56.25%;margin:1rem 0;"><iframe src="https://www.youtube.com/embed/Gb2r1uot7ew" title="Oobeya & Sonar — From AI-Generated Code to Trusted Code" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
 
 ## Tüm Etkinlikler
 
 | Tarih | Etkinlik | Rol | Kayıt |
 |---|---|---|---|
-| 7 Ekim 2026 | [Oobeya & Sonar — From AI-Generated Code to Trusted Code](https://oobeya.io/events/sonarqube-server-2026-5-ai-coding-workflow) | Konuşmacı | — |
+| 7 Ekim 2026 | [Oobeya & Sonar — From AI-Generated Code to Trusted Code](https://oobeya.io/events/sonarqube-server-2026-5-ai-coding-workflow) | Konuşmacı | [Video](https://www.youtube.com/watch?v=Gb2r1uot7ew) |
 | 8 Temmuz 2026 | Blamely by Oobeya Lansmanı | Konuşmacı | [Video](https://www.youtube.com/watch?v=OifkmwXWoog) |
 | 22 Haziran 2026 | Engineering Visibility Stories #2 — Oobeya & Microsoft | Konuşmacı | [Video](https://www.youtube.com/watch?v=t1W7EgRT5nQ) |
 | 10 Haziran 2026 | [Engineering Management Series #1 — Tech in Cube, İstanbul](https://oobeya.io/events/engineering-management-series-ai-era) | Açılış konuşması | — |

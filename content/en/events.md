@@ -8,17 +8,17 @@ Events I joined as a speaker, panelist, or organizer, with available video recor
 
 ## Latest Event
 
-### Blamely by Oobeya Launch: AI Coding Attribution (July 8, 2026)
+### Oobeya & Sonar — From AI-Generated Code to Trusted Code (October 7, 2026)
 
-Blamely launch webinar — AI vs. human code origin, token cost visibility, and a live product demo, together with Abdulkerim Atik (English).
+Oobeya & Sonar webinar — on the quality and trustworthiness of AI-generated code and engineering visibility (English).
 
-<div style="position:relative;width:100%;padding-top:56.25%;margin:1rem 0;"><iframe src="https://www.youtube.com/embed/OifkmwXWoog" title="Blamely by Oobeya Launch: AI Coding Attribution" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
+<div style="position:relative;width:100%;padding-top:56.25%;margin:1rem 0;"><iframe src="https://www.youtube.com/embed/Gb2r1uot7ew" title="Oobeya & Sonar — From AI-Generated Code to Trusted Code" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
 
 ## All Events
 
 | Date | Event | Role | Recording |
 |---|---|---|---|
-| October 7, 2026 | [Oobeya & Sonar — From AI-Generated Code to Trusted Code](https://oobeya.io/events/sonarqube-server-2026-5-ai-coding-workflow) | Speaker | — |
+| October 7, 2026 | [Oobeya & Sonar — From AI-Generated Code to Trusted Code](https://oobeya.io/events/sonarqube-server-2026-5-ai-coding-workflow) | Speaker | [Video](https://www.youtube.com/watch?v=Gb2r1uot7ew) |
 | July 8, 2026 | Blamely by Oobeya Launch | Speaker | [Video](https://www.youtube.com/watch?v=OifkmwXWoog) |
 | June 22, 2026 | Engineering Visibility Stories #2 — Oobeya & Microsoft | Speaker | [Video](https://www.youtube.com/watch?v=t1W7EgRT5nQ) |
 | June 10, 2026 | [Engineering Management Series #1 — Tech in Cube, Istanbul](https://oobeya.io/events/engineering-management-series-ai-era) | Opening talk | — |
