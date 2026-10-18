@@ -3,6 +3,7 @@ title: "SSH Key Pair Oluşturmak"
 description: "ssh-keygen ile SSH key pair oluşturma ve sunucuya parolasız bağlantı kurma adımları."
 date: 2019-06-26
 tags: [application servers]
+translation: /en/blog/create-ssh-key-pair
 ---
 
 Güvenlik amaçlı bağlandığım yerlere çoğunlukla “username”/”password” kullanmaktansa SSH Key Pair oluşturarak “Public Key”i paylaşıp bağlanmayı tercih ediyorum.

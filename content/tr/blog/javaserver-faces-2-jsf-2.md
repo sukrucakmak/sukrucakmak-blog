@@ -3,6 +3,7 @@ title: "JavaServer Faces 2 (JSF 2)"
 description: "JavaServer Faces 2'ye giriş: bileşen tabanlı web geliştirmenin temelleri."
 date: 2011-09-02
 tags: [java, jsf]
+translation: /en/blog/javaserver-faces-2-jsf-2
 ---
 
 JavaServer Faces (JSF), Java Komitesi tarafından standart web teknolojisi olarak kabul edilmiştir. Java ile web programlama yapmak isteyen bir kişinin mutlaka öğrenmesi tavsiye edilir. Ayrıntılı bilgiye [http://javaserverfaces.java.net/](http://javaserverfaces.java.net/) adresinden erişebilirsiniz.

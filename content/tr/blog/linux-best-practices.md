@@ -3,6 +3,7 @@ title: "Linux Best Practices"
 description: "Linux'ta sık kullanılan sistem komutları ve iyi pratikler: CPU, bellek, disk, kullanıcı ve port yönetimi."
 date: 2022-10-31
 tags: [linux]
+translation: /en/blog/linux-best-practices
 ---
 
 **CPU**

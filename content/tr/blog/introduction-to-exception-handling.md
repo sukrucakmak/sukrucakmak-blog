@@ -3,6 +3,7 @@ title: "Introduction to Exception Handling – Hata Yakalamaya Giriş"
 description: "Java'da hata yakalamaya (exception handling) giriş: try-catch mekanizması ve checked/unchecked ayrımı."
 date: 2011-07-26
 tags: [exceptions, java]
+translation: /en/blog/introduction-to-exception-handling
 ---
 
 Java’da “exceptions” kavramı hataları yakalamak ve istisnai durumlar için kullanılır. Güçlü bir yazılım için çok gereklidir fakat çoğu zaman gözardı edilmektedir. Biz gözardı etmeyelim.

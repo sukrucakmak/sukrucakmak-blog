@@ -3,6 +3,7 @@ title: "Apache log4j"
 description: "Java'da loglama çatısı Apache log4j'ye giriş: temel kavramlar, log seviyeleri ve kullanımı."
 date: 2011-06-27
 tags: [java, logging]
+translation: /en/blog/apache-log4j
 ---
 
 [Apache loj4j](http://logging.apache.org/log4j/) Java tabanlı bir **log**(sistem günlüğü) tutma mekanizmasıdır. Sektörde sevilir, kullanışlıdır. Projelere entegre edilmesi ve kullanması da kolay sayılabilir.

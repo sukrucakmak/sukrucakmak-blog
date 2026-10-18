@@ -3,6 +3,7 @@ title: "XML’deki Listeyi Okuyarak Nesnelere Çevirme"
 description: "XML dosyasındaki liste elemanlarını Java nesnelerine dönüştürme."
 date: 2011-08-11
 tags: [java, xml]
+translation: /en/blog/parse-xml-list-into-objects
 ---
 
 XStream kütüphanesinden [buradaki](https://www.sukrucakmak.com/xstream-java-to-xml-xml-to-java/) yazıda bahsetmiştim. Java’dan XML’e, XML’den Java’ya dönüşüm yapmamıza yardımcı oluyordu. Yalnız bir konuyu es geçtiğimi farkettim, ya nesne yerine nesneler olsa o zaman nasıl bir çıktı alacağız? XML’de liste halinde bir sürü nesne olsa o zaman nasıl Java’ya çevireceğiz? Bu yazıda bu konuları aydınlatmaya çalışacağım, fakat ilk yazının mutlaka okunması gerek, çünkü oradaki “Ders” ve “Ogretmen” sınıflarını kullanacağım.

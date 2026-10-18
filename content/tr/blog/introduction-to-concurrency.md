@@ -3,6 +3,7 @@ title: "Concurrency – Aynı Anda Kullanım"
 description: "Java'da eşzamanlı programlamaya (concurrency) giriş: thread kavramı ve temel yaklaşımlar."
 date: 2011-06-13
 tags: [concurrency, java]
+translation: /en/blog/introduction-to-concurrency
 ---
 
 Java’da “**Concurrency**” yani “**Aynı Anda Kullanım**” kavramı, aynı zamanda birden fazla iş yapmak gerektiği zaman kullanılır.

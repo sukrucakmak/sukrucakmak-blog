@@ -3,6 +3,7 @@ title: "JSF Life Cycle (Yaşam Döngüsü)"
 description: "JSF yaşam döngüsünün 6 adımı: isteğin işlenmesinden yanıtın render edilmesine kadar geçen süreç."
 date: 2011-06-28
 tags: [java, jsf]
+translation: /en/blog/jsf-life-cycle
 ---
 
 Bu yazıda [JSF Uygulama Çatısı](http://tr.wikipedia.org/wiki/JavaServer_Faces) ([JavaServer Faces Framework](http://en.wikipedia.org/wiki/JavaServer_Faces))’nın nasıl bir hayat sürdüğünü yazmaya çalışacağım 🙂 Geç yatar, geç kalkar, alkol de alırmış… Şaka bir yana, JSF’in web sayfasında işlem yapmamızdan işlemin sonucunu bize gösterene kadar hangi işlemleri yaptığı ve bize nasıl cevap verdiğini bu işlere ilk başlamam da çok merak etmiştim, hatta aramış taramış anlamamıştım, çünkü bunu açıkça anlatan pek bir kaynak yoktu, olanlar da benim dilimden anlatmıyordu (köylü usulü arıyordum çünkü 🙂 ).

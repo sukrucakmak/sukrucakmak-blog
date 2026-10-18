@@ -3,6 +3,7 @@ title: "XStream – Java to XML, XML to Java"
 description: "XStream kütüphanesiyle Java nesnelerini XML'e ve XML'i tekrar nesneye dönüştürme."
 date: 2011-06-15
 tags: [java, xml]
+translation: /en/blog/xstream-java-to-xml-xml-to-java
 ---
 
 [![](/images/xstream-java-to-xml-xml-to-java-xstream_logo-300x98.gif)](https://www.sukrucakmak.com/wp-content/uploads/2011/06/xstream_logo.gif)

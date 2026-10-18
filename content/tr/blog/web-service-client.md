@@ -3,6 +3,7 @@ title: "Web Servis İstemcisi (Web Service Client)"
 description: "Java ile bir web servis istemcisi (web service client) yazma adımları."
 date: 2011-07-01
 tags: [java, web service]
+translation: /en/blog/web-service-client
 ---
 
 Web servis hizmetinin nasıl sağlanacağını [önceki bir yazımda](https://www.sukrucakmak.com/2011/06/glassfish-uzerinde-web-servis/) GlassFish uygulama sunucusu için anlatmıştım. Lâkin web servis hizmetlerini kullanan bir de istemciler vardır. Bu yazıda da bir istemcinin nasıl oluşturulacağını ve çalıştırılacağını anlatmaya çalışacağım.

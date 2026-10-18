@@ -3,6 +3,7 @@ title: "Generic Types"
 description: "Java'da generic tiplerin neden ortaya çıktığı ve ClassCastException'lardan nasıl korundukları."
 date: 2011-07-08
 tags: [generics, java]
+translation: /en/blog/generic-types
 ---
 
 Programlamada bazen öyle olur ki bazı değerlerin tipleri önceden kestirilemez. Siz gelecek değerin `Integer` olmasını beklerken, bir bakmışsınız `String` gelmiş, uygulamanız `java.lang.ClassCastException` hatası almış, `java.lang.String cannot be cast to java.lang.Integer` diyerek gelen String değerin Integer’a dönüştürülememiş olur.

@@ -3,6 +3,7 @@ title: "Oracle’da Kullanıcı Açmak ve Yetki Vermek"
 description: "Oracle'da yeni kullanıcı açma ve yetki (grant) verme komutları."
 date: 2017-08-08
 tags: [oracle]
+translation: /en/blog/oracle-create-user-and-grant-privileges
 ---
 
 Merhaba, Oracle DB üzerinde kullanıcı açmak için gerekli komutlar aşağıdaki gibi olabilir. Bu arada yetkili bir kullanıcı ile bağlandığımızı farz ediyorum. Kullanıcı adını SUKRU olarak belirledim.

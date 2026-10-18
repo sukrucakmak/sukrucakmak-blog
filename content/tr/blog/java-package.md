@@ -3,6 +3,7 @@ title: "Java Package"
 description: "Java'da package kavramı: sınıfları düzenleme, isim çakışmalarını önleme ve erişim kontrolü."
 date: 2011-08-01
 tags: [java]
+translation: /en/blog/java-package
 ---
 
 Java Package (paket) kavramı Java sınıflarını düzenli tertipli biçimde biraraya getirmek, organize etmek için kullanılır. Aynı kategorideki ya da benzer görevdeki sınıflar biraraya getirilerek mantıksal bir bütünlük sağlanır. Bilgisayarınızdaki klasörler gibi düşünebilirsiniz; müziklerim şurada olsun, resimlerimi şuraya koyayım gibi…

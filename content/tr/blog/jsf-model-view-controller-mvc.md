@@ -3,6 +3,7 @@ title: "JSF Model-View-Controller (MVC)"
 description: "JSF'in MVC mimarisini nasıl uyguladığı: model, view ve controller ayrımı."
 date: 2011-07-05
 tags: [java, jsf]
+translation: /en/blog/jsf-model-view-controller-mvc
 ---
 
 Yeni nesil Internet uygulamalarında karşımıza çıkan ilk kavramlardan biri, **MVC**açılımı **Model-View-Controller**. JSF de kendine örnek olarak MVC yapısını baz almaktadır.

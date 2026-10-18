@@ -3,6 +3,7 @@ title: "Log4j Konfigürasyon"
 description: "Apache log4j yapılandırması: appender, layout ve log seviyesi ayarları."
 date: 2011-06-27
 tags: [java, logging]
+translation: /en/blog/log4j-configuration
 ---
 
 Apache log4j [şu yazıda](https://www.sukrucakmak.com/apache-log4j/) da bahsettiğim gibi bir loglama mekanızmasıdır ve bize şu soruların cevaplarını verir;

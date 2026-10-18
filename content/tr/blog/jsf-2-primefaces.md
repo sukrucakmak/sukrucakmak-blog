@@ -3,6 +3,7 @@ title: "JSF 2 + PrimeFaces"
 description: "JSF 2 üzerinde PrimeFaces bileşen kütüphanesiyle zengin kullanıcı arayüzleri geliştirmek."
 date: 2011-09-05
 tags: [java, jsf]
+translation: /en/blog/jsf-2-primefaces
 ---
 
 [PrimeFaces](http://www.primefaces.org), JSF 2 için yazılmış bileşen kütüphanelerinin en başında gelmektedir. Şu an itibariyle de [NetBeans](http://www.netbeans.org) geliştirme ortamında hazır gelen tek bileşen kütüphanesidir. Gelişmiş bir çok bileşenini ve detaylarını [demo sayfalarında](http://www.primefaces.org/showcase/) bulabilirsiniz.

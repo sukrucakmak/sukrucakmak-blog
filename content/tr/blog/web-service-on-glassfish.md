@@ -3,6 +3,7 @@ title: "GlassFish Üzerinde Web Servis"
 description: "GlassFish uygulama sunucusu üzerinde Java web servisi yayınlama."
 date: 2011-06-28
 tags: [application servers, glassfish, java, web service]
+translation: /en/blog/web-service-on-glassfish
 ---
 
 Web servis ([Web Service](http://en.wikipedia.org/wiki/Web_service)) kavramı, iki cihaz arasındaki iletişim yöntemlerinden biridir.

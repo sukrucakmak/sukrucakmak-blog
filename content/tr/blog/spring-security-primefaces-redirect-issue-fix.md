@@ -3,6 +3,7 @@ title: "Spring Security + PrimeFaces Yönlendirme Problemi Çözümü"
 description: "Spring Security ile PrimeFaces kullanılırken ortaya çıkan yönlendirme probleminin çözümü."
 date: 2015-05-15
 tags: [java, jsf, primefaces, spring]
+translation: /en/blog/spring-security-primefaces-redirect-issue-fix
 ---
 
 Spring Security, Java EE dünyasında kabul görmüş ve java uygulamaları için -bence- güvenlik için bulunmaz bir nimet. Ayrıntılı bilgiye [sitesinden ulaşabilirsiniz](http://projects.spring.io/spring-security/).
