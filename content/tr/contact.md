@@ -8,7 +8,7 @@ Bana aşağıdaki kanallardan ulaşabilirsiniz:
 
 | Kanal | Adres |
 |---|---|
-| E-posta | [scakmak@gmail.com](mailto:scakmak@gmail.com) |
+| E-posta | [sukru@sukru.org](mailto:sukru@sukru.org) |
 | LinkedIn | [linkedin.com/in/sukrucakmak](https://www.linkedin.com/in/sukrucakmak) |
 | GitHub | [github.com/sukrucakmak](https://github.com/sukrucakmak) |
 | Web | [sukrucakmak.com](https://www.sukrucakmak.com) |
