@@ -50,9 +50,7 @@ public class Box<T> {
 ```
 Yukarıdaki `Box<T>` ifadesindeki T’nin anlamını biraz açarsak “Type” anlamına geldiğini söyleyebiliriz, yani bu sınıftan herhangi bir tipte nesne tanımlanabilir.
 
-```text
-Box<Integer> integerBox = new Box<Integer>();
-``` da olabilir `Box<String> integerBox = new Box<String>(); ` da ya herhangi başka bir tip, primitive tipler hariç!
+`Box<Integer> integerBox = new Box<Integer>();` da olabilir `Box<String> integerBox = new Box<String>();` da ya herhangi başka bir tip, primitive tipler hariç!
 Şimdi buradan hareketle Integer tipinde bir Box nesnesi üreterek üzerinden gidilecek.
 ```java
 package org.sukru.generics;
