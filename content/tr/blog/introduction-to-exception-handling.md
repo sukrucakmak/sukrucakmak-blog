@@ -29,9 +29,11 @@ Hata yakalama işlemi;
 
 Örnek olarak `java.io.FileReader` sınıfından bir nesne ile dosya okuma işlemi yapıyorsunuz, dosya ismi veriyorsunuz ve dosyayı bulamayarak `java.io.FileNotFoundException` hatası fırlatıyor. İyi yazılmış bir programda bunu try-catch bloğu içinde yakalarsınız ve hatayı kullanıcıya bildirir, dosya ismini düzeltmesini sağlarsınız.
 “Error” ya da “Runtime Exception” haricindeki bütün durumlar “Checked Exception” olur.
+
 **2. Error**
 
 Sizin uygulamanız dışındaki ekstra uygulamalardan kaynaklanan durumlardır. Örnek olarak, dosya okumak istiyorsunuz ama daha dosya sisteminize -mesela diske- erişilemiyor, işte burada “Error” tipinde bir durum oluşur, uygulama `java.io.IOError.` hatası fırlatır.
+
 **3. Runtime Exception**
 
 Uygulamanızın çalışma zamanında oluşan durumdur. Uygulamanın kendisinden kaynaklanır, programın bug ıdır, mantık hatasıdır ya da API’nın yanlış kullanımından kaynaklanır 🙂 He ben niye güldüm, herkes gibi ben de yaptım ve genellikle `NullPointerException` aldım ondan 🙂
@@ -39,6 +41,7 @@ Uygulamanızın çalışma zamanında oluşan durumdur. Uygulamanın kendisinden
 Bu arada “Error” ve “Runtime Exception” kavramlarına topluca “Unchecked Exceptions” da denilir.
 Giriş için daha doğrusu zihninizde yer edinmesi, karşılık bulması için bu kadar bilginin yeterli olduğunu düşünüyorum. Bu konuda yazacağım bir sonraki yazıda bol bol kod yazacağız 🙂
 Kolay gelsin.
+
 **Kaynaklar**
 
 1. http://download.oracle.com/javase/tutorial/essential/exceptions/

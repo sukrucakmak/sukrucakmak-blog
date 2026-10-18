@@ -31,28 +31,19 @@ And inside the generated class I do the following in order;
 
 4. Since the method I'll call on the web service — sayHello() — returns a String, I declare accordingly and invoke the web service.
 
-[java]
-
+```java
 package org.sukru.webservices.test;
 import org.sukru.webservices.HelloWorld;
-
 import org.sukru.webservices.HelloWorldService;
-
 import org.sukru.webservices.HelloWorldServiceLocator;
 public class WebServiceTest {
 	public static void main(String[] args) throws Exception {
-
 		HelloWorldService service = new HelloWorldServiceLocator();
-
 		HelloWorld port = service.getHelloWorldPort();
-
 		String cevap = port.sayHello("Melih Sakarya");
-
 		System.out.println("Web Servisinin Cevabı: "+ cevap );
-
 	}
 }
-
-[/java]
+```
 When we right-click and choose Run As > Java Application, if we see the output **Web Servisinin Cevabı: Merhaba Melih Sakarya!**, we can celebrate 🙂
 Take it easy.

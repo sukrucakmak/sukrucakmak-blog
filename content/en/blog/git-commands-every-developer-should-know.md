@@ -78,7 +78,6 @@ There are two ways to combine branches:
 ```bash
 git switch main
 git merge feature/login    # merge with a merge commit
-
 git switch feature/login
 git rebase main            # replay commits on top of main
 git rebase -i HEAD~3       # edit/squash the last 3 commits

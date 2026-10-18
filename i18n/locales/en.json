@@ -7,13 +7,15 @@
     "home": "Home",
     "blog": "Blog",
     "about": "About",
-    "events": "Events"
+    "events": "Events",
+    "contact": "Contact"
   },
   "home": {
     "greeting": "Hi, I'm Şükrü.",
     "intro": "I'm a computer engineer who has been working in the Java and Spring ecosystem for 20+ years, and one of the organizers behind major software events in Turkey. I write about software, Java, Spring, and community experiences here.",
     "recentPosts": "Recent Posts",
-    "allPosts": "All posts"
+    "allPosts": "All posts",
+    "viewBlog": "Go to blog"
   },
   "blog": {
     "title": "Blog",

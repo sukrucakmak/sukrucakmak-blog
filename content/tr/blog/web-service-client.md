@@ -31,28 +31,19 @@ Vee oluşan sınıf içinden sırasıyla şu işlemleri yapıyorum;
 
 4. Web servisin çağıracağım metodu -sayHello()- String döneceğinden buna uygun tanımı yapıp, web servisi çalıştırıyorum.
 
-[java]
-
+```java
 package org.sukru.webservices.test;
 import org.sukru.webservices.HelloWorld;
-
 import org.sukru.webservices.HelloWorldService;
-
 import org.sukru.webservices.HelloWorldServiceLocator;
 public class WebServiceTest {
 	public static void main(String[] args) throws Exception {
-
 		HelloWorldService service = new HelloWorldServiceLocator();
-
 		HelloWorld port = service.getHelloWorldPort();
-
 		String cevap = port.sayHello("Melih Sakarya");
-
 		System.out.println("Web Servisinin Cevabı: "+ cevap );
-
 	}
 }
-
-[/java]
+```
 Sağ tıklayıp Run As > Java Application deyince çıktının şu şekilde olduğunu görürsek **Web Servisinin Cevabı: Merhaba Melih Sakarya!**, sevinebiliriz 🙂
 Kolay gelsin.
