@@ -14,16 +14,11 @@ package org.sukru.classic;
 public class Box {
 	private Object object;
 	public void add(Object object) {
-
 		this.object = object;
-
 	}
 	public Object get() {
-
 		return object;
-
 	}
-
 }
 ```
 add() metoduna gönderdiğimiz değişkenin tipi ne olursa kabul edecek de, get() metodunda mecburen “**cast**” etmemiz gerekecek.
@@ -32,17 +27,11 @@ package org.sukru.classic;
 import org.sukru.classic.Box;
 public class BoxTest {
 	public static void main(String[] args) {
-
         Box integerBox = new Box();
-
         integerBox.add(new Integer(10)); // Ya burada String ekleseydim?
-
         Integer someInteger = (Integer) integerBox.get();
-
         System.out.println(someInteger);
-
 	}
-
 }
 ```
 Evet, bu kodları çalıştırdığımızda buraya kadar bir sıkıntı yok ama kod içine de not düştüğüm gibi ya orada `integerBox.add("10");` şeklinde String olarak parametre verseydim işte o zaman ilk bahsettiğim `java.lang.ClassCastException` hatasını alırız.
@@ -50,19 +39,13 @@ Evet, bu kodları çalıştırdığımızda buraya kadar bir sıkıntı yok ama 
 ```java
 package org.sukru.generics;
 public class Box<T> {
-
 	private T t; // T burada "Type" anlamına gelir.
 	public void add(T t) {
-
 		this.t = t;
-
 	}
 	public T get() {
-
 		return t;
-
 	}
-
 }
 ```
 Yukarıdaki `Box<T>` ifadesindeki T’nin anlamını biraz açarsak “Type” anlamına geldiğini söyleyebiliriz, yani bu sınıftan herhangi bir tipte nesne tanımlanabilir.
@@ -75,17 +58,11 @@ Box<Integer> integerBox = new Box<Integer>();
 package org.sukru.generics;
 public class BoxTest {
 	public static void main(String[] args) {
-
 		Box<Integer> integerBox = new Box<Integer>();
-
 		integerBox.add(new Integer(10));
-
 		Integer someInteger = integerBox.get(); // cast’e gerek yok!
-
 		System.out.println(someInteger);
-
 	}
-
 }
 ```
 Önceki örnekte Integer tipine dönüştürmeye (cast) ihtiyaç vardı, bu örnekte gerek yok. Ayrıca daha güzeli, geliştirme ortamları (IDE) siz farkında olmadan add() metoduna Integer’dan farklı bir tip göndermeye kalkarsanız, sizi daha çalıştırmadan uyarır 🙂 Bence en önemlisi bu 🙂

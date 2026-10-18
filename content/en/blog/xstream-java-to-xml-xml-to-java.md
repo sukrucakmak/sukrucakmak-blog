@@ -15,107 +15,66 @@ To make the library's usage easy to understand, I explained it below through two
 package org.sukru.xstream.entity;
 public class Ders {
  public Long id;
-
  public String ad;
-
  public Ogretmen ogretmen;
  public Ders(Long id, String ad, Ogretmen ogretmen) {
-
  this.id = id;
-
  this.ad = ad;
-
  this.ogretmen = ogretmen;
-
  }
-
 //getters and setters
-
 }
 ```
 ```java
 package org.sukru.xstream.entity;
 public class Ogretmen {
  public String ad;
-
  public String soyad;
  public Ogretmen(String ad, String soyad) {
-
  this.ad = ad;
-
  this.soyad = soyad;
-
  }
-
 //getters and setters
 @Override
-
  public String toString() {
-
      return "Ogretmen [ad=" + ad + ", soyad=" + soyad + "]";
-
  }
-
 }
 ```
 ```java
 package org.sukru.xstream.test;
 import org.sukru.xstream.entity.Ders;
-
 import org.sukru.xstream.entity.Ogretmen;
 import com.thoughtworks.xstream.XStream;
 public class XStreamTest {
-
  public static void main(String[] args) {
-
  // Let's create a new teacher.
-
  Ogretmen ogretmen = new Ogretmen("Yasin", "Kenar");
-
  // Let's create a new course and set its teacher.
-
  Ders ders = new Ders((Long) 1L, "Software Engineering", ogretmen);
  // The XStream magic starts now.
-
  XStream xstream = new XStream();
-
  xstream.alias("Ders", Ders.class); // we gave the Ders class a name,
-
  // otherwise it also includes the
-
  // package names.
-
  String xml = xstream.toXML(ders); // we tell it to convert the ders object to xml.
-
  // Let's see what kind of XML we produced.
-
  System.out.println(xml);
  // Now let's give the generated XML back and get an object.
-
  Ders xmldenDers = (Ders) xstream.fromXML(xml);
-
  System.out.println("\n XML den Ders: "+xmldenDers.getId()+" – "+xmldenDers.getAd()+" – "+xmldenDers.getOgretmen().toString());
-
  }
-
 }
 ```
 And the XML output looks like the one below.
 ```xml
 <Ders>
-
   <id>1</id>
-
   <ad>Software Engineering</ad>
-
   <ogretmen>
-
     <ad>Yasin</ad>
-
     <soyad>Kenar</soyad>
-
   </ogretmen>
-
 </Ders>
 ```
 When we print the object created from the XML to the console, we see it looks like this.

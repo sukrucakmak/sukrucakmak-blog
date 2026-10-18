@@ -34,21 +34,14 @@ Vee oluşan sınıf içinden sırasıyla şu işlemleri yapıyorum;
 ```java
 package org.sukru.webservices.test;
 import org.sukru.webservices.HelloWorld;
-
 import org.sukru.webservices.HelloWorldService;
-
 import org.sukru.webservices.HelloWorldServiceLocator;
 public class WebServiceTest {
 	public static void main(String[] args) throws Exception {
-
 		HelloWorldService service = new HelloWorldServiceLocator();
-
 		HelloWorld port = service.getHelloWorldPort();
-
 		String cevap = port.sayHello("Melih Sakarya");
-
 		System.out.println("Web Servisinin Cevabı: "+ cevap );
-
 	}
 }
 ```

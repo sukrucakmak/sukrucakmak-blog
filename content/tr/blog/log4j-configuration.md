@@ -60,23 +60,15 @@ Seviyeler arasındaki sıralama da şu şekilde **`DEBUG < INFO < WARN < ERROR <
 Şimdi bu kadar teorik bilgi ile çalışan bir uygulama yapacağım. Projemin altına “**config**” adında bir klasör açıyorum altına da “**log4j.xml**” adını verdiğim aşağıdaki dosyayı hazırlıyorum.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
-
 <log4j:configuration>
  <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
-
 	<layout class="org.apache.log4j.PatternLayout">
-
 		<param name="ConversionPattern" value="%d [%t] %5p %c{1}:%L – %m %n" />
-
 	</layout>
-
   </appender>
  <root>
-
    <appender-ref ref="stdout" />
-
  </root>
 </log4j:configuration>
 ```
@@ -102,51 +94,33 @@ Seviyeler arasındaki sıralama da şu şekilde **`DEBUG < INFO < WARN < ERROR <
 package org.sukru.log4j;
 public class Student {
  private Long studentNumber;
-
  private String firstName;
-
  private String lastName;
  public Student(Long studentNumber, String firstName, String lastName) {
-
    this.studentNumber = studentNumber;
-
    this.firstName = firstName;
-
    this.lastName = lastName;
-
  }
-
   // getters and setters
-
 }
 ```
 Log4j için test sınıfımız.
 ```java
 package org.sukru.log4j;
 import org.apache.log4j.Logger;
-
 import org.apache.log4j.xml.DOMConfigurator;
 public class Log4jTest {
   private static Logger logger;
   public static void main(String[] args) {
-
 	configureLog4j();   //log4j’yi ayağa kaldırması için bu metodu yazdım.
-
 	logger.info("Initializing a new Student…");
-
 	Student student = new Student(100L, "Tuncay", "Uzun");
-
 	logger.info("new Student initialized: "+student.getFirstName()+" "+student.getLastName());
-
   }
   private static void configureLog4j() {
-
 	DOMConfigurator.configureAndWatch("config/log4j.xml");   //log4j konfigürasyon dosyasının projedeki yerini veriyoruz.
-
 	logger = Logger.getLogger(Log4jTest.class);
-
   }
-
 }
 ```
 Bakalım nasıl bir log elde ettik – bence gayet açıklayıcı- 🙂

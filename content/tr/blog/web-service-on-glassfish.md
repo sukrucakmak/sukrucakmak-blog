@@ -31,42 +31,27 @@ Bir sınıfın web servis olabilmesi için sınıfın başına **@WebService()**
 ```java
 package org.sukru.webservices;
 import javax.jws.WebMethod;
-
 import javax.jws.WebService;
 @WebService()
-
 public class HelloWorld {
 	@WebMethod()
-
 	public String sayHello(String name) {
-
 		System.out.println("Merhaba " + name);
-
 		return "Merhaba" + name + "!";
-
 	}
-
 }
 ```
 Yapılması gereken ek bir şey de web.xml üzerinde servlet tanımlarını yapmak, en başta oluşan web.xml içerisine aşağıdaki kodu yazıyorum.
 
 ```xml
 <servlet>
-
 	<display-name>HelloWorld</display-name>
-
 	<servlet-name>HelloWorld</servlet-name>
-
 	<servlet-class>org.sukru.webservices.HelloWorld</servlet-class>
-
 </servlet>
-
 <servlet-mapping>
-
 	<servlet-name>HelloWorld</servlet-name>
-
 	<url-pattern>/HelloWorld</url-pattern>
-
 </servlet-mapping>
 ```
 Böylelikle, HelloWorld isminde bir servletim olduğunu, url bilgisi ve sınıfının nerede olduğunu eklemiş oldum ki uygulama sunucusu tanısın uygulamamızı.

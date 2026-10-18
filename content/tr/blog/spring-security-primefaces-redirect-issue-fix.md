@@ -13,11 +13,8 @@ JSF 2.2 + Spring 4 + Hibernate 4 + PrimeFaces 5 şeklinde altyapısını kurgula
 Spring Security logu aşağıdaki gibi. /login sayfasından istediğim gibi /pages/home sayfasına yönlendirmiş.
 ```bash
 [DEBUG] ..access.intercept.FilterSecurityInterceptor – Authorization successful
-
 [DEBUG] ..security.web.FilterChainProxy            – /pages/home.xhtml reached end of additional filter chain; proceeding with original chain
-
 [DEBUG] ..web.access.ExceptionTranslationFilter    – Chain processed normally
-
 [DEBUG] ..web.context.SecurityContextPersistenceFilter – SecurityContextHolder now cleared, as request processing completed
 ```
 Başladım daha detaylı incelemeye, önce tarayıcı üzerinde gelen-giden akışı izledim.
@@ -26,23 +23,14 @@ Başladım daha detaylı incelemeye, önce tarayıcı üzerinde gelen-giden akı
 
 ```text
 javax.faces.partial.ajax:true
-
 javax.faces.source:loginButton
-
 javax.faces.partial.execute:loginForm
-
 javax.faces.partial.render:loginForm
-
 loginButton:loginButton
-
 loginForm:loginForm
-
 username:test
-
 password:123456
-
 _csrf:49756ca7-38fd-4777-bea8-58fcfe7deb73
-
 javax.faces.ViewState:-3601270081246135757:6121484162719565648
 ```
 

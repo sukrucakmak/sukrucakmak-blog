@@ -10,19 +10,12 @@ XStream kütüphanesinden [buradaki](https://www.sukrucakmak.com/xstream-java-to
 Tek bir “Ders” nesnesinin XML çıktısını oluşturmak çok kolaydı ve aşağıdaki gibi bir sonuç veriyordu.
 ```xml
 <Ders>
-
   <id>1</id>
-
   <ad>Software Engineering</ad>
-
   <ogretmen>
-
     <ad>Yasin</ad>
-
     <soyad>Kenar</soyad>
-
   </ogretmen>
-
 </Ders>
 ```
 Peki ama birden fazla “Ders” nesnesi olsa ne olacak, çıktı nasıl şekillenecek ve öncesinde biz nasıl ürettireceğiz 🙂 Aşağıda kodda, iki adet “Ogretmen” nesnesi üretip bunları kullanarak da üç adet “Ders” nesnesi oluşturacağım (15 ve 19. satırlar arası). Sınıfların özelliklerine yukarıda bağlantısını verdiğim sayfadan bakabilirsiniz.
@@ -31,88 +24,52 @@ Son olarak da **XStream** nesnemin *toXML()* metoduna “listemi” vereceğim. 
 ```java
 package org.sukru.xstream.test;
 import java.util.ArrayList;
-
 import java.util.List;
 import org.sukru.xstream.entity.Ders;
-
 import org.sukru.xstream.entity.Ogretmen;
 import com.thoughtworks.xstream.XStream;
 public class XStreamListTest {
 	public static void main(String[] args) {
 		Ogretmen o1 = new Ogretmen("Yunus Emre", "Aslan");
-
 		Ogretmen o2 = new Ogretmen("Yasin", "Kenar");
-
 		Ders d1 = new Ders(1L, "Türkçe", o1);
-
 		Ders d2 = new Ders(2L, "Arapça", o2);
-
 		Ders d3 = new Ders(3L, "Farsça", o2);
 		List<Ders> dersList = new ArrayList<Ders>();
-
 		dersList.add(d1);
-
 		dersList.add(d2);
-
 		dersList.add(d3);
 		XStream xstream = new XStream();
-
 		xstream.alias("Ders", Ders.class);
-
 		String xml = xstream.toXML(dersList);
-
 		System.out.println(xml);
-
 	}
-
 }
 ```
 En son olarak da çıktıyı aldığımızda XML aşağıdaki gibi oluyor.
 ```xml
 <list>
-
   <Ders>
-
     <id>1</id>
-
     <ad>Türkçe</ad>
-
     <ogretmen>
-
       <ad>Yunus Emre</ad>
-
       <soyad>Aslan</soyad>
-
     </ogretmen>
-
   </Ders>
-
   <Ders>
-
     <id>2</id>
-
     <ad>Arapça</ad>
-
     <ogretmen>
-
       <ad>Yasin</ad>
-
       <soyad>Kenar</soyad>
-
     </ogretmen>
-
   </Ders>
-
   <Ders>
-
     <id>3</id>
-
     <ad>Farsça</ad>
-
     <ogretmen reference="../../Ders[2]/ogretmen"/>
-
   </Ders>
-
 </list>
 ```
 Farkları neler? Birden fazla ders nesnesi var
@@ -148,50 +105,31 @@ Kodunu yazarsak;
 ```java
 package org.sukru.xstream.test;
 import java.io.BufferedReader;
-
 import java.io.FileNotFoundException;
-
 import java.io.FileReader;
-
 import java.util.List;
 import org.sukru.xstream.entity.Ders;
 import com.thoughtworks.xstream.XStream;
 public class XStreamReadingListTest {
 	@SuppressWarnings("unchecked")
-
 	public static void main(String[] args) {
-
 		String file = "files/dersler.xml";
-
 		BufferedReader reader = null;
-
 		XStream xstream = new XStream();
-
 		xstream.alias("Ders", Ders.class);
-
 		try {
-
 			reader = new BufferedReader(new FileReader(file));
 		} catch (FileNotFoundException e) {
-
 			System.out.println("[" + file + "] adresinde belirtilen dosya bulunamadı!");
-
 			e.printStackTrace();
-
 		}
 		StringBuffer sb = new StringBuffer();
 		List<Ders> dersList = (List<Ders>) xstream.fromXML(reader);
-
 		for (Ders ders : dersList) {
-
 			sb.append(ders.getId()).append(" – ").append(ders.getAd()).append("\t").append(ders.getOgretmen().getAd()).append("\n");
-
 		}
-
 		System.out.println(sb);
-
 	}
-
 }
 ```
 En sonunda ekrana bastırmıştık, çıktıyı da verelim 🙂

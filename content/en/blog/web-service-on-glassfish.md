@@ -31,42 +31,27 @@ For a class to become a web service, the **@WebService()** annotation is placed 
 ```java
 package org.sukru.webservices;
 import javax.jws.WebMethod;
-
 import javax.jws.WebService;
 @WebService()
-
 public class HelloWorld {
 	@WebMethod()
-
 	public String sayHello(String name) {
-
 		System.out.println("Merhaba " + name);
-
 		return "Merhaba" + name + "!";
-
 	}
-
 }
 ```
 An additional thing to do is to declare the servlet in web.xml — I write the following code inside the web.xml created at the beginning.
 
 ```xml
 <servlet>
-
 	<display-name>HelloWorld</display-name>
-
 	<servlet-name>HelloWorld</servlet-name>
-
 	<servlet-class>org.sukru.webservices.HelloWorld</servlet-class>
-
 </servlet>
-
 <servlet-mapping>
-
 	<servlet-name>HelloWorld</servlet-name>
-
 	<url-pattern>/HelloWorld</url-pattern>
-
 </servlet-mapping>
 ```
 With this, I've registered that I have a servlet named HelloWorld, its URL info and where its class lives — so the application server can recognize our application.

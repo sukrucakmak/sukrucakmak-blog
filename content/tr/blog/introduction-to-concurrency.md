@@ -17,38 +17,25 @@ Aslında hemen akla “**Threads**” gelir. Her bir “thread” başlıbaşın
 ```java
 public class HelloRunnable implements Runnable {
 	@Override
-
 	public void run() {
-
 		System.out.println("Hello from a thread!");
-
 	}
 	public static void main(String args[]) {
-
 		Thread t = new Thread(new HelloRunnable());
-
 		t.start();
-
 		System.out.println("ID: "+ t.getId());
-
 		System.out.println("NAME: "+ t.getName());
-
 	}
-
 }
 ```
 ```java
 public class HelloThread extends Thread {
 	public void run() {
-
 		System.out.println("Hello from a thread!");
-
 	}
 	public static void main(String[] args) {
-
 		(new HelloThread()).start();
 	}
-
 }
 ```
 Her iki örnekte de görüldüğü üzere “**Thread.start()***” ifadesi ile thread çalışmaya başlıyor. Thread çalışmaya başlayınca “**run()**” metodunu tetikliyor.*

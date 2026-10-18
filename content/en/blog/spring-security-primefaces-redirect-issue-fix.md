@@ -13,11 +13,8 @@ In my project built on JSF 2.2 + Spring 4 + Hibernate 4 + PrimeFaces 5, I notice
 The Spring Security log looks like this. It redirected from the /login page to /pages/home just as I wanted.
 ```bash
 [DEBUG] ..access.intercept.FilterSecurityInterceptor – Authorization successful
-
 [DEBUG] ..security.web.FilterChainProxy            – /pages/home.xhtml reached end of additional filter chain; proceeding with original chain
-
 [DEBUG] ..web.access.ExceptionTranslationFilter    – Chain processed normally
-
 [DEBUG] ..web.context.SecurityContextPersistenceFilter – SecurityContextHolder now cleared, as request processing completed
 ```
 I started digging deeper — first I watched the request/response flow in the browser.
@@ -26,23 +23,14 @@ I started digging deeper — first I watched the request/response flow in the br
 
 ```text
 javax.faces.partial.ajax:true
-
 javax.faces.source:loginButton
-
 javax.faces.partial.execute:loginForm
-
 javax.faces.partial.render:loginForm
-
 loginButton:loginButton
-
 loginForm:loginForm
-
 username:test
-
 password:123456
-
 _csrf:49756ca7-38fd-4777-bea8-58fcfe7deb73
-
 javax.faces.ViewState:-3601270081246135757:6121484162719565648
 ```
 

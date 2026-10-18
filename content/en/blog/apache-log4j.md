@@ -28,45 +28,29 @@ I'll bring log4j up without any file at all, using the "***configure()***" metho
 package org.sukru.log4j;
 public class Student {
 	private Long studentNumber;
-
 	private String firstName;
-
 	private String lastName;
 	public Student(Long studentNumber, String firstName, String lastName) {
-
 		this.studentNumber = studentNumber;
-
 		this.firstName = firstName;
-
 		this.lastName = lastName;
-
 	}
-
 	// getters and setters
-
 }
 ```
 Let's also write the test class where we bring log4j up and use it.
 ```java
 package org.sukru.log4j;
 import org.apache.log4j.BasicConfigurator;
-
 import org.apache.log4j.Logger;
 public class Log4jTest {
 	public static void main(String[] args) {
-
 		BasicConfigurator.configure(); // let's bring log4j up.
-
 		Logger logger = Logger.getLogger(Student.class); // let's specify which class to track.
-
 		logger.info("Initializing new Student…");
-
 		Student student = new Student(100L, "Yunus Emre", "Aslan");
-
 		logger.info("new Student initialized: "+student.getFirstName()+" "+student.getLastName());
-
 	}
-
 }
 ```
 When we run this class the output will look like this.

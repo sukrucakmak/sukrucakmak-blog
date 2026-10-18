@@ -15,107 +15,66 @@ Kütüphanenin kullanımını anlaşılmasını kolaylaştırmak için “Ders�
 package org.sukru.xstream.entity;
 public class Ders {
  public Long id;
-
  public String ad;
-
  public Ogretmen ogretmen;
  public Ders(Long id, String ad, Ogretmen ogretmen) {
-
  this.id = id;
-
  this.ad = ad;
-
  this.ogretmen = ogretmen;
-
  }
-
 //getters and setters
-
 }
 ```
 ```java
 package org.sukru.xstream.entity;
 public class Ogretmen {
  public String ad;
-
  public String soyad;
  public Ogretmen(String ad, String soyad) {
-
  this.ad = ad;
-
  this.soyad = soyad;
-
  }
-
 //getters and setters
 @Override
-
  public String toString() {
-
      return "Ogretmen [ad=" + ad + ", soyad=" + soyad + "]";
-
  }
-
 }
 ```
 ```java
 package org.sukru.xstream.test;
 import org.sukru.xstream.entity.Ders;
-
 import org.sukru.xstream.entity.Ogretmen;
 import com.thoughtworks.xstream.XStream;
 public class XStreamTest {
-
  public static void main(String[] args) {
-
  // Yeni bir öğretmen üretelim.
-
  Ogretmen ogretmen = new Ogretmen("Yasin", "Kenar");
-
  // Yeni bir ders üretip öğretmenini belirtelim.
-
  Ders ders = new Ders((Long) 1L, "Software Engineering", ogretmen);
  // XStream sihiri şimdi başlıyor.
-
  XStream xstream = new XStream();
-
  xstream.alias("Ders", Ders.class); // Ders sınıfı için bir isim verdik,
-
  // yoksa paket isimlerini de dahil
-
  // ediyor.
-
  String xml = xstream.toXML(ders); // ders nesnesini xml’e çevir diyoruz.
-
  // Bakalım nasıl bir xml ürettik.
-
  System.out.println(xml);
  // Şimdi de oluşan xml i verip nesne alalım.
-
  Ders xmldenDers = (Ders) xstream.fromXML(xml);
-
  System.out.println("\n XML den Ders: "+xmldenDers.getId()+" – "+xmldenDers.getAd()+" – "+xmldenDers.getOgretmen().toString());
-
  }
-
 }
 ```
 ve XML çıktısı da aşağıdaki gibi oluyor.
 ```xml
 <Ders>
-
   <id>1</id>
-
   <ad>Software Engineering</ad>
-
   <ogretmen>
-
     <ad>Yasin</ad>
-
     <soyad>Kenar</soyad>
-
   </ogretmen>
-
 </Ders>
 ```
 XML’den oluşturduğumuz nesneyi konsola bastırdığımız zaman aşağıdaki gibi olduğunu görürüz.

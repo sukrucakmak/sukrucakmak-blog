@@ -36,20 +36,12 @@ In current Oracle versions no privileges are needed for SELECT, INSERT, UPDATE, 
 
 ```sql
 GRANT
-
   SELECT,
-
   INSERT,
-
   UPDATE,
-
   DELETE
-
 ON
-
   schema.table
-
 TO
-
   SUKRU
 ```

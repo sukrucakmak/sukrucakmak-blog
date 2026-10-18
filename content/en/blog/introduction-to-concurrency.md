@@ -17,38 +17,25 @@ What immediately comes to mind is "**Threads**". Each "thread" is a "process" in
 ```java
 public class HelloRunnable implements Runnable {
 	@Override
-
 	public void run() {
-
 		System.out.println("Hello from a thread!");
-
 	}
 	public static void main(String args[]) {
-
 		Thread t = new Thread(new HelloRunnable());
-
 		t.start();
-
 		System.out.println("ID: "+ t.getId());
-
 		System.out.println("NAME: "+ t.getName());
-
 	}
-
 }
 ```
 ```java
 public class HelloThread extends Thread {
 	public void run() {
-
 		System.out.println("Hello from a thread!");
-
 	}
 	public static void main(String[] args) {
-
 		(new HelloThread()).start();
 	}
-
 }
 ```
 As seen in both examples, the thread starts running with the "**Thread.start()***" call. Once it starts, it triggers the "**run()**" method.*

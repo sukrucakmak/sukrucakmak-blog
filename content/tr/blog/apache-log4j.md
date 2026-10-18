@@ -28,45 +28,29 @@ fakat ben log4j’nin sağlamış olduğu “**BasicConfigurator**” sınıfın
 package org.sukru.log4j;
 public class Student {
 	private Long studentNumber;
-
 	private String firstName;
-
 	private String lastName;
 	public Student(Long studentNumber, String firstName, String lastName) {
-
 		this.studentNumber = studentNumber;
-
 		this.firstName = firstName;
-
 		this.lastName = lastName;
-
 	}
-
 	// getters and setters
-
 }
 ```
 Loj4j’yi ayağa kaldırıp, kullandığımız test sınıfımızı da yazalım.
 ```java
 package org.sukru.log4j;
 import org.apache.log4j.BasicConfigurator;
-
 import org.apache.log4j.Logger;
 public class Log4jTest {
 	public static void main(String[] args) {
-
 		BasicConfigurator.configure(); // log4j’yi ayağa kaldıralım.
-
 		Logger logger = Logger.getLogger(Student.class); // hangi sınıfı takip edeceğimizi belirtelim.
-
 		logger.info("Initializing new Student…");
-
 		Student student = new Student(100L, "Yunus Emre", "Aslan");
-
 		logger.info("new Student initialized: "+student.getFirstName()+" "+student.getLastName());
-
 	}
-
 }
 ```
 Bu sınıfı çalıştırdığımız zaman çıktısı şu şekilde olacaktır.

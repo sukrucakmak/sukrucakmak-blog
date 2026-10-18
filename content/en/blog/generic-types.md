@@ -14,16 +14,11 @@ package org.sukru.classic;
 public class Box {
 	private Object object;
 	public void add(Object object) {
-
 		this.object = object;
-
 	}
 	public Object get() {
-
 		return object;
-
 	}
-
 }
 ```
 Whatever type the variable we pass to add() is, it will accept it — but in the get() method we'll inevitably have to "**cast**".
@@ -32,17 +27,11 @@ package org.sukru.classic;
 import org.sukru.classic.Box;
 public class BoxTest {
 	public static void main(String[] args) {
-
         Box integerBox = new Box();
-
         integerBox.add(new Integer(10)); // What if I added a String here?
-
         Integer someInteger = (Integer) integerBox.get();
-
         System.out.println(someInteger);
-
 	}
-
 }
 ```
 Well, when we run this code there's no problem so far — but as I noted inside the code, what if I had passed the parameter as a String like `integerBox.add("10");`? That's when we'd get the `java.lang.ClassCastException` I mentioned at the start.
@@ -50,19 +39,13 @@ On to the solution: if we declare the Box class as a generic type with the expre
 ```java
 package org.sukru.generics;
 public class Box<T> {
-
 	private T t; // T here means "Type".
 	public void add(T t) {
-
 		this.t = t;
-
 	}
 	public T get() {
-
 		return t;
-
 	}
-
 }
 ```
 If we unpack the meaning of the T in the `Box<T>` expression above, we can say it stands for "Type" — meaning an object of any type can be defined from this class.
@@ -73,17 +56,11 @@ Now, building on this, we'll produce a Box object of type Integer and continue f
 package org.sukru.generics;
 public class BoxTest {
 	public static void main(String[] args) {
-
 		Box<Integer> integerBox = new Box<Integer>();
-
 		integerBox.add(new Integer(10));
-
 		Integer someInteger = integerBox.get(); // no cast needed!
-
 		System.out.println(someInteger);
-
 	}
-
 }
 ```
 In the previous example we needed a cast to Integer; in this one we don't. Even better, IDEs warn you before you even run it if you try to pass a type other than Integer to the add() method without you noticing 🙂 I'd say that's the most important part 🙂

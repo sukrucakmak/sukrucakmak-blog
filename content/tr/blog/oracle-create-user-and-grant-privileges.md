@@ -36,20 +36,12 @@ Güncel sürüm Oracle’da SELECT, INSERT, UPDATE, DELETE için yetki gerekmiyo
 
 ```sql
 GRANT
-
   SELECT,
-
   INSERT,
-
   UPDATE,
-
   DELETE
-
 ON
-
   schema.table
-
 TO
-
   SUKRU
 ```
