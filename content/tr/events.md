@@ -20,6 +20,12 @@ Blamely'nin lansman webinari — AI mı insan mı kod kökeni, token maliyet gö
 
 <div style="position:relative;width:100%;padding-top:56.25%;margin:1rem 0;"><iframe src="https://www.youtube.com/embed/OifkmwXWoog" title="Blamely by Oobeya Launch: AI Coding Attribution" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
 
+### JSKonf 2023 — Software Fight Club Rules: Clean Code & Code Review (Aralık 2023)
+
+İstanbul JavaScript Topluluğu'nun JSKonf 2023 konferansındaki konuşmam — clean code ve code review pratikleri üzerine (Türkçe).
+
+<div style="position:relative;width:100%;padding-top:56.25%;margin:1rem 0;"><iframe src="https://www.youtube.com/embed/b8E4mhbq8do" title="JSKonf 2023 — Software Fight Club Rules: Clean Code, Code Review" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allowfullscreen></iframe></div>
+
 ### Yeni Dünyada Blockchain (6 Haziran 2020)
 
 Mekatronik Mühendisleri Derneği "Yeni Dünyada:" webinar serisi — Coşkun Küçüközmen moderatörlüğünde blockchain paneli; ATEZ CTO'su olarak panelist (Türkçe).
