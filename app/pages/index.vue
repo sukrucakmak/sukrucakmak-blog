@@ -5,13 +5,14 @@ const { data: posts } = await useBlogPosts(4)
 
 <template>
   <UPage>
-    <UPageSection :ui="{ container: 'px-0 sm:px-0 lg:px-0 pt-8 sm:pt-10 lg:pt-12 pb-6 sm:pb-8' }">
-      <div class="flex flex-col-reverse items-start gap-8 lg:flex-row lg:items-center lg:gap-12">
+    <UPageSection :ui="{ container: 'px-0 sm:px-0 lg:px-0 py-8 sm:py-10 lg:py-12' }">
+      <div class="relative flex flex-col-reverse items-start gap-8 lg:flex-row lg:items-center lg:gap-12">
+        <div
+          aria-hidden="true"
+          class="hero-gradient pointer-events-none absolute -inset-x-10 top-[12%] h-[70%] -z-10 sm:-inset-x-16 lg:-inset-x-32"
+        />
         <div class="flex-1">
-          <p class="text-sm font-medium text-primary">
-            {{ $t('site.tagline') }}
-          </p>
-          <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">
             {{ $t('home.greeting') }}
           </h1>
           <p class="mt-4 max-w-xl text-muted">
@@ -67,7 +68,7 @@ const { data: posts } = await useBlogPosts(4)
 
     <UPageSection
       :title="$t('home.recentPosts')"
-      :ui="{ container: 'px-0 sm:px-0 lg:px-0 py-4 sm:py-6 lg:py-8', title: 'text-2xl text-left' }"
+      :ui="{ container: 'px-0 sm:px-0 lg:px-0 py-2 sm:py-3 lg:py-4 gap-4 sm:gap-6', title: 'text-2xl text-left' }"
     >
       <PostList :posts="posts ?? []" variant="cards" />
       <UButton
