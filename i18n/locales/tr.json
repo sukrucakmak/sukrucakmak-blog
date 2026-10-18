@@ -12,7 +12,8 @@
     "greeting": "Merhaba, ben Şükrü.",
     "intro": "20+ yıldır Java ve Spring ekosisteminde çalışan bir bilgisayar mühendisiyim. Türkiye'deki önemli yazılım etkinliklerinin düzenleyicilerindenim. Burada yazılım, Java, Spring ve topluluk deneyimlerim hakkında yazıyorum.",
     "recentPosts": "Son Yazılar",
-    "allPosts": "Tüm yazılar"
+    "allPosts": "Tüm yazılar",
+    "viewBlog": "Blog'a git"
   },
   "blog": {
     "title": "Blog",

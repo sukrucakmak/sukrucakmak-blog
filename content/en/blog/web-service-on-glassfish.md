@@ -28,51 +28,32 @@ Time to code — let's now create our class and the methods we want to write. I 
 [![](/images/web-service-on-glassfish-web-service-class.png)](/images/web-service-on-glassfish-web-service-class.png)
 For a class to become a web service, the **@WebService()** annotation is placed at the top of the class, and the **@WebMethod()** annotation is placed on each method we want to expose as a web service method. OK, that's all you need to know — you may disperse 🙂 Joking aside, the example Java code is below…
 
-[java]
-
+```java
 package org.sukru.webservices;
 import javax.jws.WebMethod;
-
 import javax.jws.WebService;
 @WebService()
-
 public class HelloWorld {
 	@WebMethod()
-
 	public String sayHello(String name) {
-
 		System.out.println("Merhaba " + name);
-
 		return "Merhaba" + name + "!";
-
 	}
-
 }
-
-[/java]
+```
 An additional thing to do is to declare the servlet in web.xml — I write the following code inside the web.xml created at the beginning.
 
-[xml]
-
+```xml
 <servlet>
-
 	<display-name>HelloWorld</display-name>
-
 	<servlet-name>HelloWorld</servlet-name>
-
 	<servlet-class>org.sukru.webservices.HelloWorld</servlet-class>
-
 </servlet>
-
 <servlet-mapping>
-
 	<servlet-name>HelloWorld</servlet-name>
-
 	<url-pattern>/HelloWorld</url-pattern>
-
 </servlet-mapping>
-
-[/xml]
+```
 With this, I've registered that I have a servlet named HelloWorld, its URL info and where its class lives — so the application server can recognize our application.
 Now we come to one of the important steps: deploying to GlassFish. We want to add a new server in Eclipse's Servers tab, but you won't find GlassFish in the standard list — that's why we follow Servers > New > Download Additional Adapters, select "**Oracle GlassFish Server Tools**" from the list that comes up, and after a short install Eclipse wants to restart; we say restart.
 Now we can add it. There's an example below.

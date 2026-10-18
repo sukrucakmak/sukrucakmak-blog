@@ -7,7 +7,9 @@ translation: /en/blog/jsf-2-primefaces
 ---
 
 [PrimeFaces](http://www.primefaces.org), JSF 2 için yazılmış bileşen kütüphanelerinin en başında gelmektedir. Şu an itibariyle de [NetBeans](http://www.netbeans.org) geliştirme ortamında hazır gelen tek bileşen kütüphanesidir. Gelişmiş bir çok bileşenini ve detaylarını [demo sayfalarında](http://www.primefaces.org/showcase/) bulabilirsiniz.
+
 **Bu yazıya başlamadan önce…**
+
 Daha önce yazmış olduğum şu yazıları, bu makaleye başlamadan önce okumanızı tavsiye ederim.
 
 1. [JSF Life Cycle](https://www.sukrucakmak.com/jsf-life-cycle/)
@@ -17,7 +19,9 @@ Daha önce yazmış olduğum şu yazıları, bu makaleye başlamadan önce okuma
 3. [JSF 2’ye Giriş](https://www.sukrucakmak.com/javaserver-faces-2-jsf-2/)
 
 Konular hakkında bilgili olanlar tabi ki okumasına gerek yok, lakin JSF 2’ye giriş yazısında oluşturduğumuz geliştirme ortamı üzerinden bu yazıya devam edeceğim için, en azından ona bakmanızda fayda var.
+
 **PrimeFaces ile Güçlenmek**
+
 JSF 2 projemizi PrimeFaces ile güçlendirmek sadece iki adımdan oluşmaktadır.
 
 1. PrimeFaces [indirme sayfasından](http://www.primefaces.org/downloads.html) en son kararlı sürümü indirmek ve projenin kütüphaneleri arasına eklemek

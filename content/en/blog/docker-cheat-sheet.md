@@ -51,24 +51,42 @@ docker rm -f <container-id>
 `docker rmi <image-name>`
 
 ## Remove All Stopped Containers
-`docker container prune`## Remove All Unused Images
+`docker container prune`
+
+## Remove All Unused Images
 `docker image prune -a`
 
 ## Connect to Docker via Bash
 `docker exec -it <name> bash`
+
 **Install Docker**
+
 `yum install docker`
+
 **Start Docker Deamon**
+
 `systemctl start docker`
+
 **Create a Postgres Container**
+
 `docker run -d --name my-postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres`
+
 **Create a Keycloak Server**
+
 `docker run -d --name my-keycloak -e KEYCLOAK_USER=keyadmin -e KEYCLOAK_PASSWORD=keypass -p 7000:8080 jboss/keycloak`
+
 **Create a Konga Admin GUI**
+
 `docker run -d --name my-konga -p 1337:1337 -e "TOKEN_SECRET=somerandomstring" -e "DB_ADAPTER=postgres" -e "DB_HOST=kong-database" -e "DB_PORT=5432" -e "DB_USER=kong" -e "DB_PASSWORD=kong" -e "DB_DATABASE=konga" -e "NODE_ENV=development" --net=kong-net pantsel/konga`
+
 **Create a Docker Network**
+
 `docker network create --driver bridge kong-net`
+
 **Connecting a Docker Container to a Network**
+
 `docker network connect kong-net kong-database`
+
 **Docker Compose Pull**
+
 `docker-compose pull && docker-compose down && docker-compose up -d`

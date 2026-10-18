@@ -7,7 +7,9 @@ translation: /blog/jsf-2-primefaces
 ---
 
 [PrimeFaces](http://www.primefaces.org) is the leading component library written for JSF 2. As of now it's also the only component library bundled with the [NetBeans](http://www.netbeans.org) IDE. You can find many of its advanced components and details on the [showcase pages](http://www.primefaces.org/showcase/).
+
 **Before starting this post…**
+
 I recommend reading the following posts I wrote earlier before diving into this article.
 
 1. [JSF Life Cycle](https://www.sukrucakmak.com/jsf-life-cycle/)
@@ -17,7 +19,9 @@ I recommend reading the following posts I wrote earlier before diving into this 
 3. [Introduction to JSF 2](https://www.sukrucakmak.com/javaserver-faces-2-jsf-2/)
 
 If you already know these topics you don't need to read them, but since I'll continue this post on the development environment we set up in the JSF 2 introduction, it's worth at least taking a look at that one.
+
 **Powering Up with PrimeFaces**
+
 Powering up our JSF 2 project with PrimeFaces takes only two steps.
 
 1. Download the latest stable release from the PrimeFaces [download page](http://www.primefaces.org/downloads.html) and add it to the project's libraries.

@@ -78,7 +78,6 @@ Branch'leri birleştirmenin iki yolu var:
 ```bash
 git switch main
 git merge feature/login    # merge commit ile birleştir
-
 git switch feature/login
 git rebase main            # commit'leri main'in ucuna taşı
 git rebase -i HEAD~3       # son 3 commit'i düzenle/birleştir (squash)
