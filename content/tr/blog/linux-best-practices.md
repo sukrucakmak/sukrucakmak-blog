@@ -8,49 +8,66 @@ translation: /en/blog/linux-best-practices
 
 **CPU**
 
-`lscpu`
-`cat /proc/cpuinfo`
+```bash
+lscpu
+cat /proc/cpuinfo
+```
 
 **Memory Usage**
 
-`free`
-`cat /proc/meminfo`
-`top`
-`htop`
+```bash
+free
+cat /proc/meminfo
+top
+htop
+```
 
 **Disk Usage**
 
-`df -h`
-`du -h`
+```bash
+df -h
+du -h
+```
 
 **OS Check**
 
-`cat /etc/os-release`
-`cat /etc/system-release`
-`lsb_release -a`
-`sw_vers`
+```bash
+cat /etc/os-release
+cat /etc/system-release
+lsb_release -a
+sw_vers
+```
 
 **Users**
 
-```
-w, who, users
+```bash
+w
+who
+users
 cat /etc/passwd
 ```
 
 **Groups**
 
-`cat /etc/group`
+```bash
+cat /etc/group
+```
 
 **Change Password**
 
-`passwd`
+```bash
+passwd
+```
 
 **Port Check**
 
-`netstat -ant`
+```bash
+netstat -ant
+```
 
 **Change Directory**
 
-| cd /path/to/you/want/to/go | İstediğin dizine geçer |
+| Komut | Açıklama |
 |---|---|
-| cd - | Eski çalıştığın dizine geçer |
+| `cd /path/to/you/want/to/go` | İstediğin dizine geçer |
+| `cd -` | Eski çalıştığın dizine geçer |
