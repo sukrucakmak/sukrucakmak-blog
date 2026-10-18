@@ -3,6 +3,7 @@ title: "SFTP Configuration on CentOS"
 description: "Configuring an SFTP-only user and upload directory on CentOS via sshd_config."
 date: 2021-06-20
 tags: [application servers]
+translation: /blog/sftp-configuration-on-centos
 ---
 
 It is a cheat sheet for SFTP configuration on CentOS. Long version is on [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-enable-sftp-without-shell-access-on-centos-7).
