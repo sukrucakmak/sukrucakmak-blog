@@ -4,16 +4,35 @@ description: Şükrü Çakmak — Oobeya kurucu ortağı ve CTO'su; bilgisayar m
 translation: /en/about
 ---
 
-Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağı ve CTO'suyum. Oobeya'da yazılım geliştirme ekiplerinin teslimat sürtünmesini azaltan bir **software engineering intelligence** platformu geliştiriyoruz.
+Merhaba! Ben Şükrü Çakmak — [Oobeya](https://oobeya.io)'nın kurucu ortağı ve CTO'suyum. 20 yılı aşkın süredir yazılım geliştiriyorum; kariyerimin büyük bölümü **Java** ve **Spring** ekosisteminde geçti. Türkiye'de düzenlenen önemli yazılım etkinliklerinin de organizatörlerindenim.
 
-20 yılı aşkın süredir yazılım geliştiriyorum; kariyerimin büyük bölümü **Java** ve **Spring** ekosisteminde geçti. i2i Systems'ta Turkcell, Vodafone ve Avea'nın billing/charging uygulamalarında kıdemli geliştirici ve yazılım mimarı olarak çalıştım; ardından Vakıfbank'ta çözüm mimarı ve Atez Yazılım Teknolojileri'nde CTO olarak görev aldım. Telekomünikasyon, bankacılık ve dış ticaret süreçlerinde uçtan uca yazılım tasarımı, geliştirme, test ve bakım konularında çalıştım — 12-factor ilkelerini önemserim.
+## Deneyim
 
-Uzmanlık alanlarım: Java ekosistemi — Spring Boot, JPA, Hibernate, REST, SOAP, JSF — ve JavaScript tarafında Node.js, Express.js, Vue.js.
+- <img src="/logos/oobeya.svg" alt="Oobeya" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Oobeya** — Kurucu Ortak & CTO · _Ara 2022 – günümüz_  
+  Yazılım geliştirme ekiplerinin teslimat sürtünmesini azaltan bir **software engineering intelligence** platformu geliştiriyoruz.
+- <img src="/logos/i2i-systems.png" alt="i2i Systems" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **i2i Systems** — Kıdemli Geliştirici & Yazılım Mimarı · _2011 – 2018_  
+  Turkcell, Vodafone ve Avea'nın billing/charging uygulamalarında geliştirme ve mimari.
+- <img src="/logos/vakifbank.png" alt="Vakıfbank" style="height:22px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Vakıfbank** — Çözüm Mimarı  
+  Bankacılık süreçlerinde uçtan uca çözüm mimarisi.
+- <img src="/logos/atez.png" alt="Atez Yazılım" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Atez Yazılım Teknolojileri** — CTO  
+  Dış ticaret süreçleri için yazılım tasarımı, geliştirme, test ve bakım.
+- <img src="/logos/altinbas.png" alt="Altınbaş Üniversitesi" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Altınbaş Üniversitesi** — Eğitmen  
+  Yazılım mühendisliği dersleri.
 
-Yazılım topluluğuna katkı vermeyi de mesleğim kadar önemsiyorum: Türkiye'de düzenlenen önemli yazılım etkinliklerinin organizatörlerindenim ve Altınbaş Üniversitesi'nde eğitmenlik yaptım.
+## Eğitim
 
-**Eğitim:** Kocaeli Üniversitesi, Bilgisayar Mühendisliği (doktora, devam ediyor) · Boğaziçi Üniversitesi, Yazılım Mühendisliği (MSc, 2011) · Kadir Has Üniversitesi, Bilgisayar Mühendisliği (BSc, 2009)
+- <img src="/logos/kocaeli.png" alt="Kocaeli Üniversitesi" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kocaeli Üniversitesi** — Bilgisayar Mühendisliği, Doktora _(devam ediyor)_
+- <img src="/logos/bogazici.png" alt="Boğaziçi Üniversitesi" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Boğaziçi Üniversitesi** — Yazılım Mühendisliği, MSc _(2011)_
+- <img src="/logos/khas.svg" alt="Kadir Has Üniversitesi" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kadir Has Üniversitesi** — Bilgisayar Mühendisliği, BSc _(2009)_
 
-**Bağlantılar:** [LinkedIn](https://linkedin.com/in/sukrucakmak) · [GitHub](https://github.com/sukrucakmak) · [sukrucakmak.com](https://sukrucakmak.com)
+## Uzmanlıklar
 
-Bu blogda Java, Spring, yazılım mimarisi ve topluluk deneyimlerim hakkında yazıyorum. Yazıların bir kısmı İngilizce de yayınlanıyor — sağ üstteki dil seçiciyle geçiş yapabilirsiniz.
+Java ekosistemi — Spring Boot, JPA, Hibernate, REST, SOAP, JSF — ve JavaScript tarafında Node.js, Express.js, Vue.js. 12-factor ilkelerini önemserim.
+
+## Topluluk
+
+Türkiye'de düzenlenen önemli yazılım etkinliklerinin organizatörlerindenim.
+
+## Bağlantılar
+
+[LinkedIn](https://linkedin.com/in/sukrucakmak) · [GitHub](https://github.com/sukrucakmak) · [sukrucakmak.com](https://sukrucakmak.com)

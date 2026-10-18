@@ -4,16 +4,35 @@ description: Şükrü Çakmak — co-founder and CTO of Oobeya; computer enginee
 translation: /about
 ---
 
-Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io), where we're building a **software engineering intelligence** platform that helps development teams reduce friction in software development and delivery.
+Hi! I'm Şükrü Çakmak — co-founder and CTO of [Oobeya](https://oobeya.io). I've been developing software for over 20 years, most of it in the **Java** and **Spring** ecosystem. I'm also one of the organizers behind major software events in Turkey.
 
-I've been developing software for over 20 years, most of it in the **Java** and **Spring** ecosystem. At i2i Systems I worked as a senior developer and software architect on Turkcell, Vodafone and Avea's billing/charging applications; later I served as a solution architect at Vakıfbank and as CTO at Atez Yazılım Teknolojileri. Across telecommunications, banking and foreign trade, I've designed, developed, tested and maintained software end to end — with 12-factor principles as an important guide.
+## Experience
 
-My areas of expertise: the Java ecosystem — Spring Boot, JPA, Hibernate, REST, SOAP, JSF — and on the JavaScript side Node.js, Express.js, and Vue.js.
+- <img src="/logos/oobeya.svg" alt="Oobeya" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Oobeya** — Co-Founder & CTO · _Dec 2022 – present_  
+  Building a **software engineering intelligence** platform that helps development teams reduce friction in software development and delivery.
+- <img src="/logos/i2i-systems.png" alt="i2i Systems" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **i2i Systems** — Senior Developer & Software Architect · _2011 – 2018_  
+  Development and architecture for Turkcell, Vodafone and Avea's billing/charging applications.
+- <img src="/logos/vakifbank.png" alt="Vakıfbank" style="height:22px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Vakıfbank** — Solution Architect  
+  End-to-end solution architecture for banking processes.
+- <img src="/logos/atez.png" alt="Atez" style="height:20px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Atez Yazılım Teknolojileri** — CTO  
+  Software design, development, testing and maintenance for foreign-trade processes.
+- <img src="/logos/altinbas.png" alt="Altınbaş University" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Altınbaş University** — Lecturer  
+  Software engineering courses.
 
-Giving back to the software community matters to me as much as the craft itself: I'm one of the organizers behind major software events in Turkey, and I've lectured at Altınbaş University.
+## Education
 
-**Education:** Kocaeli University, Computer Engineering (PhD, ongoing) · Boğaziçi University, Software Engineering (MSc, 2011) · Kadir Has University, Computer Engineering (BSc, 2009)
+- <img src="/logos/kocaeli.png" alt="Kocaeli University" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kocaeli University** — Computer Engineering, PhD _(ongoing)_
+- <img src="/logos/bogazici.png" alt="Boğaziçi University" style="height:28px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Boğaziçi University** — Software Engineering, MSc _(2011)_
+- <img src="/logos/khas.svg" alt="Kadir Has University" style="height:24px;width:auto;display:inline-block;vertical-align:middle;margin-right:8px"> **Kadir Has University** — Computer Engineering, BSc _(2009)_
 
-**Links:** [LinkedIn](https://linkedin.com/in/sukrucakmak) · [GitHub](https://github.com/sukrucakmak) · [sukrucakmak.com](https://sukrucakmak.com)
+## Expertise
 
-On this blog I write about Java, Spring, software architecture, and community experiences. Some posts are also published in Turkish — use the language switcher in the top right to switch.
+The Java ecosystem — Spring Boot, JPA, Hibernate, REST, SOAP, JSF — and on the JavaScript side Node.js, Express.js, and Vue.js. I follow the 12-factor principles.
+
+## Community
+
+One of the organizers behind major software events in Turkey.
+
+## Links
+
+[LinkedIn](https://linkedin.com/in/sukrucakmak) · [GitHub](https://github.com/sukrucakmak) · [sukrucakmak.com](https://sukrucakmak.com)
