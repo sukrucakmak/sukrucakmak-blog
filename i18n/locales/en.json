@@ -1,0 +1,30 @@
+{
+  "site": {
+    "title": "Şükrü Çakmak",
+    "tagline": "Computer Engineer · Java & Spring · Community Organizer"
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "home": {
+    "greeting": "Hi, I'm Şükrü.",
+    "intro": "I'm a computer engineer who has been working in the Java and Spring ecosystem for 20+ years, and one of the organizers behind major software events in Turkey. I write about software, Java, Spring, and community experiences here.",
+    "recentPosts": "Recent Posts",
+    "allPosts": "All posts"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Posts about software, Java, Spring, and community.",
+    "empty": "No posts yet.",
+    "onlyInLocale": "This post is only available in English."
+  },
+  "post": {
+    "backToBlog": "← Back to blog",
+    "readIn": "Read in the other language"
+  },
+  "footer": {
+    "builtWith": "Built with Nuxt and Nuxt Content"
+  }
+}

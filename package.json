@@ -1,0 +1,23 @@
+{
+  "name": "sukrucakmak-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.16.1",
+    "@nuxtjs/i18n": "^10.6.0",
+    "better-sqlite3": "^13.0.3",
+    "nuxt": "^4.6.2",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.9",
+    "vue-tsc": "^3.3.13"
+  }
+}

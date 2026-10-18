@@ -1,0 +1,30 @@
+{
+  "site": {
+    "title": "Şükrü Çakmak",
+    "tagline": "Bilgisayar Mühendisi · Java & Spring · Topluluk Organizatörü"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "blog": "Blog",
+    "about": "Hakkımda"
+  },
+  "home": {
+    "greeting": "Merhaba, ben Şükrü.",
+    "intro": "20+ yıldır Java ve Spring ekosisteminde çalışan bir bilgisayar mühendisiyim. Türkiye'deki önemli yazılım etkinliklerinin düzenleyicilerindenim. Burada yazılım, Java, Spring ve topluluk deneyimlerim hakkında yazıyorum.",
+    "recentPosts": "Son Yazılar",
+    "allPosts": "Tüm yazılar"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Yazılım, Java, Spring ve topluluk üzerine yazılar.",
+    "empty": "Henüz yazı yok.",
+    "onlyInLocale": "Bu yazı yalnızca Türkçe olarak mevcut."
+  },
+  "post": {
+    "backToBlog": "← Blog'a dön",
+    "readIn": "Diğer dilde oku"
+  },
+  "footer": {
+    "builtWith": "Nuxt ve Nuxt Content ile geliştirildi"
+  }
+}
