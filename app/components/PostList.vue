@@ -45,7 +45,7 @@ const { t, locale } = useI18n()
             :key="tag"
             :label="tag"
             variant="subtle"
-            color="neutral"
+            color="primary"
             size="sm"
           />
         </div>
@@ -70,7 +70,7 @@ const { t, locale } = useI18n()
             :key="tag"
             :label="tag"
             variant="subtle"
-            color="neutral"
+            color="primary"
             size="sm"
           />
         </div>

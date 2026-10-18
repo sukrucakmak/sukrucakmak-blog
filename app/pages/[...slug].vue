@@ -47,7 +47,9 @@ useSeoMeta({
       />
     </div>
     <UPageBody>
-      <ContentRenderer :value="page" />
+      <div class="content-body">
+        <ContentRenderer :value="page" />
+      </div>
     </UPageBody>
   </UPage>
 </template>
