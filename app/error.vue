@@ -42,9 +42,8 @@ function goHome() {
           <UButton
             :to="localePath('/')"
             :label="t('error.backHome')"
-            icon="i-lucide-house"
             size="lg"
-            class="mt-8 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary!"
+            class="mt-8 justify-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary!"
             @click.prevent="goHome"
           />
         </section>
