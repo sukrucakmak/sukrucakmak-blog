@@ -30,5 +30,12 @@
   },
   "footer": {
     "builtWith": "Nuxt ve Nuxt Content ile geliştirildi"
+  },
+  "error": {
+    "notFoundTitle": "404 — Sayfa bulunamadı",
+    "notFoundDescription": "Aradığınız sayfa taşınmış, silinmiş ya da hiç var olmamış olabilir.",
+    "genericTitle": "Bir hata oluştu",
+    "genericDescription": "Beklenmeyen bir sorun oluştu. Lütfen daha sonra tekrar deneyin.",
+    "backHome": "Ana sayfaya dön"
   }
 }

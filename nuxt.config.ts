@@ -53,6 +53,11 @@ export default defineNuxtConfig({
       },
     },
   },
+  experimental: {
+    // SSR-render .output/public/404.html (nginx error_page) instead of an
+    // empty SPA shell, so the custom error page is in the HTML itself.
+    prerenderErrorPages: [404],
+  },
   nitro: {
     prerender: {
       crawlLinks: true,

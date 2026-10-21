@@ -26,6 +26,9 @@ jobs:
       - name: Generate static site
         run: npm run generate
 
+      - name: Verify custom 404 page
+        run: npm test
+
       - name: Setup SSH key
         env:
           DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
