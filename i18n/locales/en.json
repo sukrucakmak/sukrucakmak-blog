@@ -30,5 +30,12 @@
   },
   "footer": {
     "builtWith": "Built with Nuxt and Nuxt Content"
+  },
+  "error": {
+    "notFoundTitle": "404 — Page not found",
+    "notFoundDescription": "The page you are looking for may have been moved, deleted, or never existed.",
+    "genericTitle": "Something went wrong",
+    "genericDescription": "An unexpected error occurred. Please try again later.",
+    "backHome": "Back to home"
   }
 }

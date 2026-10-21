@@ -47,7 +47,8 @@ npm run dev        # http://localhost:3000
 ## Production
 
 ```bash
-npm run generate   # static site -> .output/public
+npm run generate   # static site -> .output/public (incl. SSR-rendered 404.html)
+npm test           # sanity-check the generated 404.html
 npm run build      # SSR build
 npm run preview
 ```
