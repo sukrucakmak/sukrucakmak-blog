@@ -1,4 +1,7 @@
 import { defineContentConfig, defineCollection, z } from '@nuxt/content'
+import { scheduledPosts } from './scheduled-posts'
+
+const scheduled = scheduledPosts()
 
 const pageSchema = z.object({
   date: z.string().optional(),
@@ -11,12 +14,12 @@ export default defineContentConfig({
   collections: {
     pages_tr: defineCollection({
       type: 'page',
-      source: { include: 'tr/**', prefix: '/tr' },
+      source: { include: 'tr/**', exclude: scheduled.filter(p => p.startsWith('tr/')), prefix: '/tr' },
       schema: pageSchema,
     }),
     pages_en: defineCollection({
       type: 'page',
-      source: { include: 'en/**', prefix: '/en' },
+      source: { include: 'en/**', exclude: scheduled.filter(p => p.startsWith('en/')), prefix: '/en' },
       schema: pageSchema,
     }),
   },

@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Daily rebuild at 00:05 Europe/Istanbul publishes posts whose date has come.
+  schedule:
+    - cron: '5 21 * * *'
 
 concurrency:
   group: deploy-main
