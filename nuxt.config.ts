@@ -1,12 +1,14 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
+import { scheduledPosts } from './scheduled-posts'
 
 // The link crawler only follows what pages link to — paginated blog posts
 // beyond page 1 get no index.html and 404 on refresh. Enumerate every
 // content file so all routes are prerendered.
 function contentRoutes(): string[] {
   const routes: string[] = []
+  const scheduled = new Set(scheduledPosts())
   for (const loc of ['tr', 'en'] as const) {
     const prefix = loc === 'en' ? '/en' : ''
     const dir = fileURLToPath(new URL(`./content/${loc}`, import.meta.url))
@@ -16,7 +18,7 @@ function contentRoutes(): string[] {
           routes.push(`${prefix}/${entry.name.slice(0, -3)}`)
       }
       for (const entry of readdirSync(`${dir}/blog`)) {
-        if (entry.endsWith('.md'))
+        if (entry.endsWith('.md') && !scheduled.has(`${loc}/blog/${entry}`))
           routes.push(`${prefix}/blog/${entry.slice(0, -3)}`)
       }
     } catch { /* content dir missing — let the crawler do its best */ }
@@ -48,7 +50,7 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         highlight: {
-          langs: ['bash', 'shell', 'html', 'java', 'sql', 'xml', 'json', 'yaml', 'typescript', 'javascript', 'vue', 'diff', 'properties', 'ini'],
+          langs: ['bash', 'shell', 'html', 'java', 'sql', 'xml', 'json', 'yaml', 'typescript', 'javascript', 'vue', 'diff', 'properties', 'ini', 'nginx', 'dockerfile'],
         },
       },
     },
