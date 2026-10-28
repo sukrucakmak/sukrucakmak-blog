@@ -10,11 +10,51 @@
     "contact": "İletişim"
   },
   "home": {
-    "greeting": "Merhaba, ben Şükrü.",
-    "intro": "20+ yıldır Java ve Spring ekosisteminde çalışan bir bilgisayar mühendisiyim. Türkiye'deki önemli yazılım etkinliklerinin düzenleyicilerindenim. Burada yazılım, Java, Spring ve topluluk deneyimlerim hakkında yazıyorum.",
     "recentPosts": "Son Yazılar",
     "allPosts": "Tüm yazılar",
-    "viewBlog": "Blog'a git"
+    "viewBlog": "Blog'a git",
+    "role": "Kurucu ortak & CTO, Oobeya",
+    "community": "Topluluk organizatörü",
+    "headline1": "Kod yazıyorum.",
+    "headlineAccent": "Deneyimlerimi",
+    "headline2": "paylaşıyorum.",
+    "lede": "20+ yıldır Java ve Spring ekosisteminde üretiyor, öğreniyor ve topluluklarla buluşuyorum.",
+    "explore": "Yazıları keşfet",
+    "now": "Şu an: Oobeya'da engineering intelligence geliştiriyor",
+    "whoami": "# mühendis, doktora öğrencisi",
+    "chips": {
+      "spring": "Üretken, güçlü, güvenilir",
+      "java": "20+ yıllık deneyim",
+      "kubernetes": "Modern altyapılar",
+      "community": "Topluluk",
+      "communitySub": "Birlikte daha güçlü"
+    },
+    "note": "Daha iyi yazılımlar, daha güçlü topluluklar için…",
+    "highlights": {
+      "years": "Yıl deneyim",
+      "javaTitle": "Java & Spring",
+      "java": "Kurumsal tecrübe",
+      "stagesTitle": "13 sahne",
+      "stages": "Konuşmacı · panelist",
+      "communityTitle": "Topluluklar",
+      "community": "Etkinlik · paylaşım"
+    },
+    "postsDescription": "Java, Spring, DevOps ve sahada işe yarayan komutlar üzerine notlarım ve öğrendiklerim.",
+    "postsAll": "Tüm yazıları görüntüle",
+    "talksTitle": "Sahneden",
+    "talksDescription": "Konuşmacı, panelist ya da organizatör olarak yer aldığım etkinlikler ve video kayıtları.",
+    "talksAll": "Tüm etkinlikler",
+    "latestTalk": "Son konuşma",
+    "video": "Video",
+    "journeyTitle": "Yolculuk",
+    "journeyDescription": "Akademiden telekoma, bankacılıktan kendi şirketime: 20 yıl, tek satırda.",
+    "contactEyebrow": "İletişim",
+    "contactTitle": "Bir etkinlik, bir proje ya da sadece bir kahve?",
+    "contactAccent": "Yaz bana.",
+    "contactHand": "— teknoloji, insanlarla daha anlamlı.",
+    "contactCta": "İletişime geç",
+    "followTitle": "Takipte kal",
+    "followDescription": "Yeni yazılar, konuşmalar ve açık kaynak çalışmaları için beni buralardan takip edebilirsin."
   },
   "blog": {
     "title": "Blog",
@@ -22,11 +62,15 @@
     "empty": "Henüz yazı yok.",
     "categories": "Kategoriler",
     "all": "Tümü",
-    "onlyInLocale": "Bu yazı yalnızca Türkçe olarak mevcut."
+    "onlyInLocale": "Bu yazı yalnızca Türkçe olarak mevcut.",
+    "eyebrow": "Notlar & rehberler"
   },
   "post": {
     "backToBlog": "Blog'a dön",
-    "readIn": "Diğer dilde oku"
+    "readIn": "Diğer dilde oku",
+    "readingTime": "{n} dk okuma",
+    "related": "Diğer yazılar",
+    "relatedAll": "Tüm yazılar"
   },
   "footer": {
     "builtWith": "Nuxt ve Nuxt Content ile geliştirildi"

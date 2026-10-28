@@ -11,6 +11,7 @@ export function useBlogPosts(limit?: number) {
     const query = queryCollection(collection)
       .where('path', 'LIKE', `/${locale.value}/blog/%`)
       .order('date', 'DESC')
+      .select('path', 'title', 'description', 'date', 'tags')
     return limit ? query.limit(limit).all() : query.all()
   })
 }
@@ -27,4 +28,15 @@ export function formatPostDate(date: string, locale: string) {
     month: 'long',
     day: 'numeric',
   })
+}
+
+// Nuxt Content minimark body: nodes are strings or [tag, props, ...children].
+export function readingMinutes(body: unknown) {
+  let words = 0
+  const walk = (node: unknown) => {
+    if (typeof node === 'string') words += node.split(/\s+/).filter(Boolean).length
+    else if (Array.isArray(node)) node.slice(2).forEach(walk)
+  }
+  ;((body as { value?: unknown[] } | undefined)?.value ?? []).forEach(walk)
+  return Math.max(1, Math.round(words / 200))
 }

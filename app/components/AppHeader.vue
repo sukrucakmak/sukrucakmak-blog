@@ -14,6 +14,9 @@ const items = computed<NavigationMenuItem[]>(() => [
 
 <template>
   <UHeader :title="t('site.title')" :to="localePath('/')">
+    <template #title>
+      <span class="text-xl font-extrabold uppercase tracking-tight">{{ t('site.title') }}<span class="text-primary">.</span></span>
+    </template>
     <UNavigationMenu :items="items" variant="link" />
     <template #right>
       <UColorModeButton />
