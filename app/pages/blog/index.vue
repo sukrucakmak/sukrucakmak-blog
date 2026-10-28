@@ -4,7 +4,7 @@ const { data: posts } = await useBlogPosts()
 const route = useRoute()
 const router = useRouter()
 
-const pageSize = 5
+const pageSize = 9
 
 const activeTag = computed(() =>
   typeof route.query.tag === 'string' && route.query.tag ? route.query.tag : null,
@@ -58,52 +58,68 @@ useSeoMeta({
 
 <template>
   <UPage>
-    <UPageHeader
-      :title="$t('blog.title')"
-      :description="$t('blog.description')"
-    />
-    <UPageBody>
-      <div class="flex flex-col-reverse gap-10 lg:flex-row lg:gap-14">
-        <div class="min-w-0 flex-1">
-          <PostList :posts="pagedPosts" />
-          <div v-if="filteredPosts.length > pageSize" class="mt-8 flex justify-center">
-            <UPagination
-              v-model:page="page"
-              :total="filteredPosts.length"
-              :items-per-page="pageSize"
-            />
-          </div>
-        </div>
-        <aside v-if="allTags.length" class="shrink-0 lg:w-56">
-          <h2 class="text-sm font-semibold uppercase tracking-wide text-muted">
-            {{ $t('blog.categories') }}
-          </h2>
-          <ul class="mt-4 flex flex-wrap gap-x-4 gap-y-2 lg:flex-col lg:items-start lg:gap-y-1.5">
-            <li>
-              <button
-                type="button"
-                class="text-sm"
-                :class="activeTag === null ? 'font-semibold text-primary' : 'text-muted hover:text-highlighted'"
-                @click="setTag(null)"
-              >
-                {{ $t('blog.all') }}
-                <span class="text-muted">({{ posts?.length ?? 0 }})</span>
-              </button>
-            </li>
-            <li v-for="[tag, count] in allTags" :key="tag">
-              <button
-                type="button"
-                class="text-sm"
-                :class="activeTag === tag ? 'font-semibold text-primary' : 'text-muted hover:text-highlighted'"
-                @click="setTag(activeTag === tag ? null : tag)"
-              >
-                {{ tag }}
-                <span class="text-muted">({{ count }})</span>
-              </button>
-            </li>
-          </ul>
-        </aside>
+    <header class="pb-8 pt-6 sm:pt-10">
+      <p class="font-mono text-xs font-semibold uppercase tracking-[.18em] text-primary">
+        {{ $t('blog.eyebrow') }}
+      </p>
+      <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-highlighted sm:text-6xl">
+        {{ $t('blog.title') }}
+      </h1>
+      <p class="mt-4 max-w-2xl text-lg text-muted">
+        {{ $t('blog.description') }}
+      </p>
+    </header>
+
+    <nav v-if="allTags.length" :aria-label="$t('blog.categories')" class="flex flex-wrap gap-2 border-y border-default py-5">
+      <button
+        type="button"
+        class="pill"
+        :class="{ on: activeTag === null }"
+        @click="setTag(null)"
+      >
+        {{ $t('blog.all') }} <span class="opacity-60">{{ posts?.length ?? 0 }}</span>
+      </button>
+      <button
+        v-for="[tag, count] in allTags"
+        :key="tag"
+        type="button"
+        class="pill"
+        :class="{ on: activeTag === tag }"
+        @click="setTag(activeTag === tag ? null : tag)"
+      >
+        {{ tag }} <span class="opacity-60">{{ count }}</span>
+      </button>
+    </nav>
+
+    <div class="mt-10">
+      <p v-if="!pagedPosts.length" class="text-muted">
+        {{ $t('blog.empty') }}
+      </p>
+      <div v-else class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <PostCoverCard v-for="post in pagedPosts" :key="post.path" :post="post" />
       </div>
-    </UPageBody>
+      <div v-if="filteredPosts.length > pageSize" class="mt-12 flex justify-center">
+        <UPagination
+          v-model:page="page"
+          :total="filteredPosts.length"
+          :items-per-page="pageSize"
+        />
+      </div>
+    </div>
   </UPage>
 </template>
+
+<style scoped>
+.pill {
+  padding: 7px 13px;
+  border: 1px solid var(--ui-border);
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--ui-text-muted);
+  transition: border-color .15s, color .15s, background .15s;
+}
+.pill:hover { border-color: var(--ui-primary); color: var(--ui-text-highlighted); }
+.pill.on { border-color: var(--ui-primary); background: var(--ui-primary); color: #fff; }
+</style>

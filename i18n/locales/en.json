@@ -10,11 +10,51 @@
     "contact": "Contact"
   },
   "home": {
-    "greeting": "Hi, I'm Şükrü.",
-    "intro": "I'm a computer engineer who has been working in the Java and Spring ecosystem for 20+ years, and one of the organizers behind major software events in Turkey. I write about software, Java, Spring, and community experiences here.",
     "recentPosts": "Recent Posts",
     "allPosts": "All posts",
-    "viewBlog": "Go to blog"
+    "viewBlog": "Go to blog",
+    "role": "Co-founder & CTO, Oobeya",
+    "community": "Community organizer",
+    "headline1": "I write code.",
+    "headlineAccent": "I share what",
+    "headline2": "I learn.",
+    "lede": "For 20+ years I've been building, learning and meeting communities in the Java and Spring ecosystem.",
+    "explore": "Explore the blog",
+    "now": "Now: building engineering intelligence at Oobeya",
+    "whoami": "# engineer, PhD student",
+    "chips": {
+      "spring": "Productive, powerful, reliable",
+      "java": "20+ years of experience",
+      "kubernetes": "Modern infrastructure",
+      "community": "Community",
+      "communitySub": "Stronger together"
+    },
+    "note": "For better software and stronger communities…",
+    "highlights": {
+      "years": "Years of experience",
+      "javaTitle": "Java & Spring",
+      "java": "Enterprise experience",
+      "stagesTitle": "13 stages",
+      "stages": "Speaker · panelist",
+      "communityTitle": "Communities",
+      "community": "Events · sharing"
+    },
+    "postsDescription": "Notes and lessons on Java, Spring, DevOps and the commands that actually help in the field.",
+    "postsAll": "View all posts",
+    "talksTitle": "On stage",
+    "talksDescription": "Events where I took part as a speaker, panelist or organizer, with video recordings.",
+    "talksAll": "All events",
+    "latestTalk": "Latest talk",
+    "video": "Video",
+    "journeyTitle": "Journey",
+    "journeyDescription": "From academia to telecom, from banking to my own company: 20 years in one line.",
+    "contactEyebrow": "Contact",
+    "contactTitle": "An event, a project, or just a coffee?",
+    "contactAccent": "Drop me a line.",
+    "contactHand": "— technology means more with people.",
+    "contactCta": "Get in touch",
+    "followTitle": "Stay in touch",
+    "followDescription": "Follow along for new posts, talks and open-source work."
   },
   "blog": {
     "title": "Blog",
@@ -22,11 +62,15 @@
     "empty": "No posts yet.",
     "categories": "Categories",
     "all": "All",
-    "onlyInLocale": "This post is only available in English."
+    "onlyInLocale": "This post is only available in English.",
+    "eyebrow": "Notes & guides"
   },
   "post": {
     "backToBlog": "Back to blog",
-    "readIn": "Read in the other language"
+    "readIn": "Read in the other language",
+    "readingTime": "{n} min read",
+    "related": "More posts",
+    "relatedAll": "All posts"
   },
   "footer": {
     "builtWith": "Built with Nuxt and Nuxt Content"

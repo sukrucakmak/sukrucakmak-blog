@@ -35,7 +35,11 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
   fonts: {
-    families: [{ name: 'Public Sans', provider: 'google' }],
+    families: [
+      { name: 'Public Sans', provider: 'google' },
+      { name: 'JetBrains Mono', provider: 'google' },
+      { name: 'Caveat', provider: 'google' },
+    ],
   },
   i18n: {
     strategy: 'prefix_except_default',
